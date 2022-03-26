@@ -7,11 +7,15 @@
         <title>Trackgenix SA</title>
     </head>
     <body>
-        <header>
-            <h1>
-            <strong>Trackgenix SA</strong>
-            </h1>
-        </header>      
+        <section>
+            <article>
+                <header>
+                    <h1>
+                    <strong>Trackgenix SA</strong>
+                    </h1>               
+        </section> 
+            </article>
+                </header>                         
         <hr>
         <nav>
             <ul>
@@ -19,27 +23,36 @@
                 <li><a href="#">Generic</a></li>
                 <li><a href="#contacto">Contact us</a></li>
             </ul>
+        <hr>
         </nav>
-        <h2>
-            <strong>What is Trackgenix</strong>
-        </h2>
-        <div>
-            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.                
-            </p>
-            <img src="computer.png"> 
-        </div>
-        <h2>
-            <strong>Our History</strong>
-        </h2>
-        <div>
-            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.              
-            </p>
-            <img src="people.png">
-            <button type="submit">Learn more</button>
-        </div>
-        <h2>
+        <section class="main-content">
+            <article>
+                <h3>
+                <strong>What is Trackgenix</strong>
+                </h3>
+                <div class="content">
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.                
+                </p>
+                <img src="computer.png"> 
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>       
+                <h3>
+                <strong>Our History</strong>
+                </h3>
+                <div class="content">
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.              
+                </p>
+                <img src="people.png">
+                <button type="submit">Learn more</button>
+                </div>
+            </article>
+        </section>
+        <h3>
             <strong>Features</strong>
-        </h2>
+        </h3>
         <div>
         <p>
             Lorem ipsum is simply dummy text of the printing and typesetting industry.
@@ -52,9 +65,10 @@
             <li>Item 5: Lorem ipsum is simply dummy text of the printing and typesetting industry.</li>
         </ul>
         </div>
-        <h2 id="contacto">
-            <strong>Contact us</strong>
-        </h2>
+        <section>
+            <h3 id="contacto">
+                <strong>Contact us</strong>
+            </h3>
         <div>
             <label>Name</label>
             <input type="text" name="nombre">
@@ -62,38 +76,50 @@
         <div>
             <label>Email</label>
             <input type="text" name="Email">
-        </div> 
+        </div>
         <div>
             <label>Contact area</label>
-            <select name="Option">
-        <h3>         
-        </strong>Trackgenix</strong>
-        </h3>
-        <footer>
-            <p>Products           
-            </p>
+            <select name="Option"></select>
+        </div>
+        <div>
+            <label>Message</label>
+            <textarea name="Message"></textarea>
+        </div>
+        <div>
+            <button type="submit">Send message</button>
+            <button type="reset">Reset</button>
+        </div>
+        </section>
+        <section>
+            <footer>      
+                <h4>         
+                    </strong>Trackgenix</strong>
+                </h4>
+                    <p>Products           
+                     </p>
                 <ol type="1"> 
                     <li>Features</li>
                     <li>Downloads</li>
                     <li>Integrations</li>
                     <li>Extras</li>
                 </ol> 
-            <p>Company
-            </p>
+                    <p>Company
+                    </p>
                 <ol type="1"> 
                     <li>About us</li>
                     <li>Clients</li>
                     <li>Resources</li>
                     <li>Blog</li>
                 </ol> 
-            <p>Support
-            </p>
+                    <p>Support
+                    </p>
                 <ol type="1"> 
                     <li>Help</li>
                     <li>Tutorials</li>
                     <li>API</li>
                     <li>Contact</li>
                 </ol>
-        </footer>
+        </section>        
+            </footer>
     </body>
 </html>
