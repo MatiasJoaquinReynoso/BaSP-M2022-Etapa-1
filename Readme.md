@@ -2,7 +2,10 @@
 ## Intro
 >In this project we are going to recreate the landing of the screenflow created in figma but now applied to HTML.
 The main focus of this project will be  the structure of the landing page.
-
+## About Trackgenix S.A
+```
+Trackgenix offers innovative IT solutions to increase the efficiency of logistics operations: vehicle tracking, fleet management, routing.
+```
 ## Landing page screenflow contents
 ```
 1.Header
@@ -10,7 +13,6 @@ The main focus of this project will be  the structure of the landing page.
 3.Content
 4.Footer
 ```
-
 ## The Project
 You can see the project on [Figma](https://www.figma.com/file/9lqXCWuQHXf9mBq8QbuLci/BaSP---UI-Kit---MM) or  your computer.
 ```
@@ -25,7 +27,4 @@ You can see the project on [Figma](https://www.figma.com/file/9lqXCWuQHXf9mBq8Qb
 3.Open index"
 ```
 ![parte 3](https://user-images.githubusercontent.com/101222934/159836270-57459d2d-fa37-4e1c-a0f5-bfcfd7f8e139.png)
-
-
-
 <p align="right"><i>Created by Matias Reynoso</i></p>
