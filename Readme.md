@@ -1,11 +1,7 @@
 # Readme BaSP-M2022-Etapa 1
 ## Intro
 >In this project we are going to recreate the landing of the screenflow created in figma but now applied to HTML.
-The main focus of this project will be  the structure of the landing page.
-## About Trackgenix S.A
-```
-Trackgenix offers innovative IT solutions to increase the efficiency of logistics operations: vehicle tracking, fleet management, routing.
-```
+>The main focus of this project will be  the structure of the landing page.
 ## Landing page screenflow contents
 ```
 1.Header
