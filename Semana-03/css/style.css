@@ -41,6 +41,7 @@ h3 {
 } 
 h4 {
     text-align: center;
+  
 }
 /* SETTING COMPONENTS */
 p {
@@ -90,7 +91,7 @@ nav {
 }
 nav > h2 {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;  
 }
 nav > ul {
     padding: 0;
@@ -125,3 +126,85 @@ nav > ul > li {
     text-align: center;
     margin-bottom: 6px;
 }
+/* CONTACT US */
+#contact-us{
+    position: relative;
+    height: 512px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+}
+/*  WHAT IS TRACKGENIX */
+#what-is-trackgenix{
+    position: relative;
+    padding-top: 49px;
+    height: 500px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+}
+#what-is-trackgenix > h2 {
+    position: absolute;
+    top: 84px;
+}
+#what-is-trackgenix > p {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    width: 420px;
+}
+#what-is-trackgenix > img {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 525px;
+    height: 401px;
+}
+/*  OUR HISTORY */
+#our-history {
+    position: relative;
+    padding-top: 49px;
+    height: 500px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+}
+#our-history > h2 {
+    position: absolute;
+    top: 84px;
+}
+#our-history > p {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    width: 420px;
+}
+#our-history > img {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 525px;
+    height: 401px;
+}
+/* CONTACT US */
+#contact-us {
+    position: relative;
+    height: 512px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+}
+/* OUR SERVICES */
+#our-services {
+    position: relative;
+    height: 316px;
+    padding-left: 135px;
+}
+.our-services-item {
+    display: inline-block;
+    position: relative;
+    width: 230px;
+}
+.our-services-item:nth-child(2) {
+    margin-left: 69px;
+    margin-right: 100px;
+}
+.our-services-item > ol {
+    padding: 20px;
+    height: 130;
+}
+
+  
+    
