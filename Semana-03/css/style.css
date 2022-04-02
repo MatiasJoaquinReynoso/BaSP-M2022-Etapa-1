@@ -109,4 +109,19 @@ nav > ul > li {
     list-style-type: none;
     margin-left: 20px;
     font-size: 20px;
-} 
+}
+/* FOOTER */
+#footer {
+    height: 100px;
+    width: calccalc(100% - 288px);
+    padding-top: 25px;
+    right: 0px;
+    margin-left: 288px;
+    box-shadow: inset 0 4px 0 #373867;
+    background-color: #373867;
+}
+#footer > .social-media {
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
+}
