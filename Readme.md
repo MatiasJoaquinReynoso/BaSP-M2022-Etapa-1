@@ -1,5 +1,5 @@
 # Readme BaSP-M2022-Etapa 1
-## Trackgenix
+## Trackgenix 
 ```
 Trackgenix offers innovative IT solutions to increase the efficiency of logistics operations: 
 - vehicle tracking 
@@ -8,11 +8,11 @@ Trackgenix offers innovative IT solutions to increase the efficiency of logistic
 ```
 ## About the project
 ```
-The objective of this project is to recreate the landing page created in figma but now in html/css.
+The objective of this project is to recreate the landing page of Trackgenix SA created in figma but now in html/css.
 To achieve the goal we will need weeks of learning to create the original page.
 First we are going to generate the structure of the landing page with html and then style it with css.
 ```
-### How to open 
+### Guideline
 You can see the project on [Figma](https://www.figma.com/file/9lqXCWuQHXf9mBq8QbuLci/BaSP---UI-Kit---MM) or  your computer.
 ```
 1.Go to "BaSP-M2022-Etapa 1" on your library
@@ -27,9 +27,11 @@ You can see the project on [Figma](https://www.figma.com/file/9lqXCWuQHXf9mBq8Qb
 3.Open the file "index.html" on your browser
 ```
 ![parte 3](https://user-images.githubusercontent.com/101222934/161268590-5a7c65d1-d90a-48cf-b960-ffc3565393db.png)
+## Progress
 ### Week 02
 >We are going to recreate the landing screenflow created in figma but now applied to HTML.
 The main focus of this week will be  the structure of the landing page.
 ### Week 03
 >Now that we have created the landing page in html, we are going to style it through the use of css.
+
 <p align="right"><i>Created by Matias Reynoso</i></p>
