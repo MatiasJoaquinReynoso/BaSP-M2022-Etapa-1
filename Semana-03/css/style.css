@@ -1,0 +1,42 @@
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #ffffff;
+    color: #373867;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+}
+.header{
+    background: #AACE9B;
+    color:#373867;
+    text-align: left;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 288px);
+    height: 100px;
+    z-index: 100;
+    padding: 0;
+    margin-left: 316px;
+}
+.header h1 {
+    color: #373867;
+    font-size: 50px;  
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+}
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+} 
+h4 {
+    text-align: center;
+}
