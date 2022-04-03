@@ -1,73 +1,87 @@
 /* FONTS */
+
 .font-poppins {
     font-family: 'Poppins', sans-serif;
 }
+
 .font-roboto {
     font-family: 'Roboto', sans-serif;
 }
-/* HEADER */
+
+/* HEADER + COMPONENTS */
+
 body {
     background-color: #ffffff;
     color: #373867;
     font-family:'Roboto', sans-serif;
     font-weight: 400;
 }
-.header{
+
+.header {
     background: #AACE9B;
     color:#373867;
     text-align: left;
     font-weight: 700;
-    position: fixed;
+    position: relative;
     top: 0;
     width: calc(100% - 288px);
     height: 100px;
     z-index: 100;
-    padding: 0;
+    padding: 40px;
     margin-left: 316px;
 }
+
 .header h1 {
     color: #373867;
     font-size: 50px;  
 }
+
 h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
 }
+
 h3 {
     font-size: 25px;
     font-weight: 600;
     line-height: 30px;
 } 
+
 h4 {
     text-align: center;
   
 }
-/* SETTING COMPONENTS */
 p {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
 }
+
 a {
     color: #000;
     text-decoration: none;
 }
+
 img {
     border-radius: 5px;
 } 
+
 section {
     position: relative;
     margin: 54px;
 } 
+
 main {
     padding-top: 100px;
     padding-left: 288px;
 }
+
 article {
     position: relative;
     margin: 54px;
 }
+
 /* SIDEBAR */
 nav {
     position: fixed;
@@ -80,38 +94,50 @@ nav {
     height: 100%;
     background-color: #ddd;
 }
+
 #sidebar-search {
     width: 100%;
     height: 37px;
     font-size: 14px;
     padding-left: 12px;
-    margin-bottom: 78px;
+    margin-bottom: 5px;
     border-radius: 4px;
     border-color: #373867;
 }
-nav > h2 {
-    font-size: 20px;
-    margin-bottom: 40px;  
+
+.login-form-send {
+    height: 46px;
+    padding: 14px 36px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background-color: #373867;
+    color:  #fff;
 }
-nav > ul {
-    padding: 0;
-    list-style-type: none;
+  
+.signup-form-send {
+    height: 46px;
+    margin-left: 45px;
+    padding: 14px 36px;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color: #373867;
 }
-nav > ul > li {
-    line-height: 23px;
-    margin: 20px 0;
-}
+
 /* SOCIAL MEDIA */
 .social-media {
     display: inline-block;
-} 
+}
+
 .social-media > li {
     display: inline-block;
     list-style-type: none;
     margin-left: 20px;
     font-size: 20px;
 }
+
 /* FOOTER */
+
 #footer {
     height: 100px;
     width: calccalc(100% - 288px);
@@ -121,34 +147,34 @@ nav > ul > li {
     box-shadow: inset 0 4px 0 #373867;
     background-color: #373867;
 }
+
 #footer > .social-media {
     display: block;
     text-align: center;
     margin-bottom: 6px;
 }
-/* CONTACT US */
-#contact-us{
-    position: relative;
-    height: 512px;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
-}
+
 /*  WHAT IS TRACKGENIX */
+
 #what-is-trackgenix{
     position: relative;
     padding-top: 49px;
     height: 500px;
     box-shadow: 0px -1px 0px 0px #aaaaaa inset;
 }
+
 #what-is-trackgenix > h2 {
     position: absolute;
     top: 84px;
 }
+
 #what-is-trackgenix > p {
     display: inline-block;
     position: absolute;
     top: 150px;
     width: 420px;
 }
+
 #what-is-trackgenix > img {
     display: inline-block;
     position: absolute;
@@ -156,23 +182,28 @@ nav > ul > li {
     width: 525px;
     height: 401px;
 }
+
 /*  OUR HISTORY */
+
 #our-history {
     position: relative;
     padding-top: 49px;
     height: 500px;
     box-shadow: 0px -1px 0px 0px #aaaaaa inset;
 }
+
 #our-history > h2 {
     position: absolute;
     top: 84px;
 }
+
 #our-history > p {
     display: inline-block;
     position: absolute;
     top: 150px;
     width: 420px;
 }
+
 #our-history > img {
     display: inline-block;
     position: absolute;
@@ -180,27 +211,157 @@ nav > ul > li {
     width: 525px;
     height: 401px;
 }
+
 /* CONTACT US */
+
 #contact-us {
     position: relative;
     height: 512px;
+    padding: 50px 0;
     box-shadow: 0px -1px 0px 0px #aaaaaa inset;
 }
+
+#contact-name, #contact-email {
+    display: inline-block;
+    width: 500px;
+    height: 37px;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+#contact-area {
+    width: 1037px;
+    height: 37px;
+    margin: 24px 0;
+    border-radius: 2px;
+    border: 0.5px solid #767676;
+    font-size: calc(40px /3);
+    color: #767676;
+}
+  
+#contact-message {
+    width: 1037px;
+    height: 140px;
+    margin-bottom: 24px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 2px;
+    border: 0.5px solid #767676;
+    font-size: calc(40px /3);
+    color: #767676;
+}
+  
+.contact-form-send {
+    height: 46px;
+    padding: 14px 36px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background-color: #373867;
+    color:  #fff;
+}
+  
+.contact-form-reset {
+    height: 46px;
+    margin-left: 45px;
+    padding: 14px 36px;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color: #373867;
+}
+
 /* OUR SERVICES */
+
 #our-services {
     position: relative;
     height: 316px;
     padding-left: 135px;
 }
+
 .our-services-item {
     display: inline-block;
     position: relative;
     width: 230px;
 }
+
 .our-services-item > ol {
     padding: 20px;
     height: 130;
 }
 
-  
-    
+/* WHY-TRACKGENIX */
+
+#why-trackgenix {
+    position: relative;
+    padding-top: 50px;
+    height: 461px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+} 
+
+#why-trackgenix > h2 {
+    margin-bottom: 36px;
+} 
+
+.wtrackgenix-item:nth-child(3), .wtrackgenix-item:nth-child(5) {
+    margin-left: 60px;
+} 
+
+.wtrackgenix-item { 
+    position: relative;
+    display: inline-block;
+    width: 490px;
+    height: 130px;
+    margin-bottom: 35px;
+} 
+
+.wtrackgenix-item > i {
+    position: absolute;
+    margin-right: 10px;
+    font-size: 130px;
+} 
+
+.wtrackgenix-item > h3 {
+    position: relative;
+    left: 140px;
+    width: 350px;
+}
+
+.wtrackgenix-item > p {
+    position: relative;
+    top: 5px;
+    left: 140px;
+    width: 350px;
+    font-size: 14px;
+}
+
+/* FEATURES */
+
+#features > h2 {
+    position: absolute;
+    top: 5px;
+}
+
+#features {
+    position: relative;
+    padding-top: 50px;
+    height: 461px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+}
+
+#features > p {
+    position: relative;
+    top: 5px;
+    left: 50px;
+    width: 350px;
+    font-size: 14px;
+}
+
+#features > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#features > ul > li {
+    line-height: 23px;
+    margin: 20px 0;
+}
