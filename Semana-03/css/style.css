@@ -88,19 +88,38 @@ nav {
     padding: 35px 14px;
     top: 0;
     left: 0;
-    z-index: 200;
-    font-size: 20px;
     width: 288px;
     height: 100%;
+    z-index: 200;
     background-color: #ddd;
+    font-size: 20px;
 }
+
+nav > h2 {
+    margin-top: 70px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+nav > ul {
+    margin-left: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+  
+nav > ul > li {
+    margin-left: 20px;
+    margin: 20px 0;
+    line-height: 23px;
+}
+
 
 #sidebar-search {
     width: 100%;
     height: 37px;
     font-size: 14px;
-    padding-left: 12px;
-    margin-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: 30px;
     border-radius: 4px;
     border-color: #373867;
 }
@@ -112,6 +131,7 @@ nav {
     border-radius: 5px;
     background-color: #373867;
     color:  #fff;
+    margin-left: 20px;
 }
   
 .signup-form-send {
@@ -122,37 +142,9 @@ nav {
     border-radius: 5px;
     background-color: #AACE9B;
     color: #373867;
+    margin-left: 15px;
 }
 
-/* SOCIAL MEDIA */
-.social-media {
-    display: inline-block;
-}
-
-.social-media > li {
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-/* FOOTER */
-
-#footer {
-    height: 100px;
-    width: calccalc(100% - 288px);
-    padding-top: 25px;
-    right: 0px;
-    margin-left: 10px;
-    box-shadow: inset 0 4px 0 #373867;
-    background-color: #373867;
-}
-
-#footer > .social-media {
-    display: block;
-    text-align: center;
-    margin-bottom: 6px;
-}
 
 /*  WHAT IS TRACKGENIX */
 
@@ -212,128 +204,6 @@ nav {
     height: 401px;
 }
 
-/* CONTACT US */
-
-#contact-us {
-    position: relative;
-    height: 512px;
-    padding: 50px 0;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
-}
-
-#contact-name, #contact-email {
-    display: inline-block;
-    width: 500px;
-    height: 37px;
-    margin-top: 50px;
-    padding-left: 10px;
-}
-
-#contact-area {
-    width: 1037px;
-    height: 37px;
-    margin: 24px 0;
-    border-radius: 2px;
-    border: 0.5px solid #767676;
-    font-size: calc(40px /3);
-    color: #767676;
-}
-  
-#contact-message {
-    width: 1037px;
-    height: 140px;
-    margin-bottom: 24px;
-    padding-top: 10px;
-    padding-left: 5px;
-    border-radius: 2px;
-    border: 0.5px solid #767676;
-    font-size: calc(40px /3);
-    color: #767676;
-}
-  
-.contact-form-send {
-    height: 46px;
-    padding: 14px 36px;
-    border: 1px solid #373867;
-    border-radius: 5px;
-    background-color: #373867;
-    color:  #fff;
-}
-  
-.contact-form-reset {
-    height: 46px;
-    margin-left: 45px;
-    padding: 14px 36px;
-    border: 1px solid #AACE9B;
-    border-radius: 5px;
-    background-color: #AACE9B;
-    color: #373867;
-}
-
-/* OUR SERVICES */
-
-#our-services {
-    position: relative;
-    height: 316px;
-    padding-left: 135px;
-}
-
-.our-services-item {
-    display: inline-block;
-    position: relative;
-    width: 230px;
-}
-
-.our-services-item > ol {
-    padding: 20px;
-    height: 130;
-}
-
-/* WHY-TRACKGENIX */
-
-#why-trackgenix {
-    position: relative;
-    padding-top: 50px;
-    height: 461px;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
-} 
-
-#why-trackgenix > h2 {
-    margin-bottom: 36px;
-} 
-
-.wtrackgenix-item:nth-child(3), .wtrackgenix-item:nth-child(5) {
-    margin-left: 60px;
-} 
-
-.wtrackgenix-item { 
-    position: relative;
-    display: inline-block;
-    width: 490px;
-    height: 130px;
-    margin-bottom: 35px;
-} 
-
-.wtrackgenix-item > i {
-    position: absolute;
-    margin-right: 10px;
-    font-size: 130px;
-} 
-
-.wtrackgenix-item > h3 {
-    position: relative;
-    left: 140px;
-    width: 350px;
-}
-
-.wtrackgenix-item > p {
-    position: relative;
-    top: 5px;
-    left: 140px;
-    width: 350px;
-    font-size: 14px;
-}
-
 /* FEATURES */
 
 #features {
@@ -369,8 +239,7 @@ nav {
     height: 401px;
 }
   
-#features > a {
-    
+#features > a {  
     height: 46px;
     margin-left: 45px;
     padding: 14px 36px;
@@ -379,4 +248,164 @@ nav {
     background-color: #AACE9B;
     color: #373867;
     
+}
+
+/* WHY-TRACKGENIX */
+
+#why-trackgenix {
+    position: relative;
+    padding-top: 50px;
+    height: 461px;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+    margin: 50px;
+} 
+
+#why-trackgenix > h2 {
+    margin-bottom: 36px;
+} 
+
+.wtrackgenix-item:nth-child(3), .wtrackgenix-item:nth-child(5) {
+    margin-left: 150px;
+} 
+
+.wtrackgenix-item { 
+    position: relative;
+    display: inline-block;
+    width: 490px;
+    height: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+} 
+
+.wtrackgenix-item > i {
+    position: absolute;
+    margin-right: 10px;
+    font-size: 130px;
+} 
+
+.wtrackgenix-item > h3 {
+    position: relative;
+    left: 140px;
+    width: 350px;
+}
+
+.wtrackgenix-item > p {
+    position: relative;
+    top: 5px;
+    left: 140px;
+    width: 350px;
+    font-size: 14px;
+}
+
+/* CONTACT US */
+
+#contact-us {
+    position: relative;
+    height: 512px;
+    padding: 50px 0;
+    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+}
+
+#contact-name, #contact-email {
+    display: inline-block;
+    width: 500px;
+    height: 37px;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+#contact-area {
+    width: 1037px;
+    height: 37px;
+    margin: 24px 0;
+    border-radius: 2px;
+    border: 0.5px solid #767676;
+    font-size: calc(40px /3);
+    color: #767676;
+}
+  
+#contact-message {
+    width: 1037px;
+    height: 140px;
+    margin-bottom: 24px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 2px;
+    border: 0.5px solid #767676;
+    color: #767676;
+}
+  
+.contact-form-send {
+    height: 46px;
+    padding: 14px 36px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background-color: #373867;
+    color:  #fff;
+}
+  
+.contact-form-reset {
+    height: 46px;
+    margin-left: 45px;
+    padding: 14px 36px;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color: #373867;
+}
+
+/* OUR SERVICES */
+
+#our-services{
+    position: relative;
+    height: 316px;
+    padding-top: 50px;
+    padding-left: 135px;
+}
+  
+.our-services-item {
+    position: relative;
+    display: inline-block;
+    width: 230px;
+}
+  
+.our-services-item:nth-child(2) {
+    margin-left: 69px;
+    margin-right: 100px;
+}
+  
+.our-services-item > ol {
+    height: 130px;
+    padding: 20px;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    display: inline-block;
+}
+
+.social-media > li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+#footer {
+    position: relative;
+    height: 100px;
+    width: calc(100% - 288px);
+    padding-top: 25px;
+    right: 0px;
+    margin-left: 288px;
+    box-shadow: inset 0 4px 0 #373867;
+    background-color: #373867;
+}
+
+#footer > .social-media {
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
 }
