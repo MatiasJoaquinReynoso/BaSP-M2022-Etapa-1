@@ -1,37 +1,34 @@
-# Readme BaSP-M2022-Etapa 1
-## Trackgenix 
+# Trackgenix
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 3RD WEEK PROJECT
 ```
-Trackgenix offers innovative IT solutions to increase the efficiency of logistics operations: 
-- vehicle tracking 
-- fleet management
-- routing.
+The objective of the first week was to create screensflows of a new page for the company Trackgenix on Figma.
+Then the problem of week 02 was to create an HTML file that has the same content as the landing created the first week.
+Now in week 03 we are going to style the html document created last week using css.
 ```
-## About the project
+## What is Trackgenix?
 ```
-The objective of this project is to recreate the landing page of Trackgenix SA created in figma but now in html/css.
-To achieve the goal we will need weeks of learning to create the original page.
-First we are going to generate the structure of the landing page with html and then style it with css.
+The company Trackgenix SA provides software development services to other companies,and has asked us to develop a web system that facilitates the recording of hours worked by each employee in each project and work team.
 ```
-### Guideline
-You can see the project on [Figma](https://www.figma.com/file/9lqXCWuQHXf9mBq8QbuLci/BaSP---UI-Kit---MM) or  your computer.
-```
-1.Go to "BaSP-M2022-Etapa 1" on your library
-```
-![parte 1](https://user-images.githubusercontent.com/101222934/161268384-bc487afc-f854-4bad-b09a-7d175e8fb470.png)
-```
-2. Access to the folder "Semana-02"
-```
-![parte 2](https://user-images.githubusercontent.com/101222934/161268527-53004c66-d986-4b56-8f55-6fb26cb3bcd7.png)
 
-```
-3.Open the file "index.html" on your browser
-```
-![parte 3](https://user-images.githubusercontent.com/101222934/161268590-5a7c65d1-d90a-48cf-b960-ffc3565393db.png)
-## Progress
-### Week 02
->We are going to recreate the landing screenflow created in figma but now applied to HTML.
-The main focus of this week will be  the structure of the landing page.
-### Week 03
->Now that we have created the landing page in html, we are going to style it through the use of css.
+## What will we find on the page?
+- A sidebar where you can redirect us to home, sign up and sign in. It will also contain the contact of the company.
+- Sections explaining what trackgenix is dedicated to.
+- Features section.
+- Information Section
+- History of the company. 
+- And a section of products, company and suport.
 
-<p align="right"><i>Created by Matias Reynoso</i></p>
+## Content
+In this repository you will find:
+
+- An HTML index file with the structure of the layout
+- A folder called "images" that contains all of the images used in the page
+- Folder called "styles" where you can see the styles used for the layout.
+
+## Executing
+
+To run the program you must double click on the "index.html" file, where you will open the trackgenix page in your browser
+
+
+## Contact
+If you want to know more about this project, you can get in contact via e-mail: matiasjoaquinreynoso@gmail.com
