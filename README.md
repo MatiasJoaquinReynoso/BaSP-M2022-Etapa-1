@@ -21,7 +21,7 @@ The company Trackgenix SA provides software development services to other compan
 ## Content
 In this repository you will find:
 
-- An HTML index file with the structure of the layout
+- An HTML index file with the structure of the layout.
 - A folder called "images" that contains all of the images used in the page
 - Folder called "styles" where you can see the styles used for the layout
 

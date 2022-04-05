@@ -136,7 +136,6 @@ nav > ul > li {
   
 .signup-form-send {
     height: 46px;
-    margin-left: 45px;
     padding: 14px 36px;
     border: 1px solid #AACE9B;
     border-radius: 5px;
@@ -158,6 +157,7 @@ nav > ul > li {
 #what-is-trackgenix > h2 {
     position: absolute;
     top: 84px;
+    margin-left: 50px;
 }
 
 #what-is-trackgenix > p {
@@ -165,6 +165,7 @@ nav > ul > li {
     position: absolute;
     top: 150px;
     width: 420px;
+    margin-left: 50px;
 }
 
 #what-is-trackgenix > img {
@@ -187,6 +188,7 @@ nav > ul > li {
 #our-history > h2 {
     position: absolute;
     top: 84px;
+    margin-left: 50px;
 }
 
 #our-history > p {
@@ -194,6 +196,7 @@ nav > ul > li {
     position: absolute;
     top: 150px;
     width: 420px;
+    margin-left: 50px;
 }
 
 #our-history > img {
@@ -216,6 +219,7 @@ nav > ul > li {
 #features > h2 {
     position: absolute;
     top: 84px;
+    margin-left: 50px;
 }
   
 #features > ul {
@@ -225,10 +229,13 @@ nav > ul > li {
     width: 350px;
     height: 120px;
     padding-left: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
   
 #features > ul > li {
     font-size: 20px;
+    margin-top: 30px;
 }
   
 #features > img {
@@ -238,18 +245,18 @@ nav > ul > li {
     width: 525px;
     height: 401px;
 }
-  
-#features > a {  
+
+.button-learn {
     height: 46px;
-    margin-left: 45px;
+    margin-left: 1350px;
     padding: 14px 36px;
     border: 1px solid #AACE9B;
     border-radius: 5px;
     background-color: #AACE9B;
     color: #373867;
-    
+    margin-top: 420px;
 }
-
+  
 /* WHY-TRACKGENIX */
 
 #why-trackgenix {
@@ -261,7 +268,8 @@ nav > ul > li {
 } 
 
 #why-trackgenix > h2 {
-    margin-bottom: 36px;
+    margin-bottom: 60px;
+    margin-left: 50px;
 } 
 
 .wtrackgenix-item:nth-child(3), .wtrackgenix-item:nth-child(5) {
@@ -273,13 +281,14 @@ nav > ul > li {
     display: inline-block;
     width: 490px;
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 10px;
+    margin-left: 270px;
 } 
 
 .wtrackgenix-item > i {
     position: absolute;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 130px;
 } 
 
@@ -342,11 +351,12 @@ nav > ul > li {
     border-radius: 5px;
     background-color: #373867;
     color:  #fff;
+    
 }
   
 .contact-form-reset {
     height: 46px;
-    margin-left: 45px;
+    margin-left: 15px;
     padding: 14px 36px;
     border: 1px solid #AACE9B;
     border-radius: 5px;
@@ -366,12 +376,8 @@ nav > ul > li {
 .our-services-item {
     position: relative;
     display: inline-block;
-    width: 230px;
-}
-  
-.our-services-item:nth-child(2) {
-    margin-left: 69px;
-    margin-right: 100px;
+    width: 200px;
+    margin-left: 180px;
 }
   
 .our-services-item > ol {
@@ -396,10 +402,12 @@ nav > ul > li {
 #footer {
     position: relative;
     height: 100px;
+    top: 0;
     width: calc(100% - 288px);
-    padding-top: 25px;
     right: 0px;
-    margin-left: 288px;
+    z-index: 100;
+    padding: 30px;
+    margin-left: 316px;
     box-shadow: inset 0 4px 0 #373867;
     background-color: #373867;
 }
