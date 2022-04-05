@@ -1,13 +1,22 @@
 # Trackgenix
 ## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 3RD WEEK PROJECT
-```
-The objective of the first week was to create screensflows of a new page for the company Trackgenix on Figma.
-Then the problem of week 02 was to create an HTML file that has the same content as the landing created the first week.
-Now in week 03 we are going to style the html document created last week using css.
-```
+
 ## What is Trackgenix?
 ```
 The company Trackgenix SA provides software development services to other companies,and has asked us to develop a web system that facilitates the recording of hours worked by each employee in each project and work team.
+```
+## The project
+### Week 01
+```
+The objective of the first week was to create screensflows of a new page for the company Trackgenix on Figma.
+```
+### Week 02
+```
+Then the problem was to create an HTML file that has the same content as the landing created the first week.
+```
+### Week 03
+```
+We are going to style the html file created using css.
 ```
 
 ## What will we find on the page?
@@ -25,10 +34,11 @@ In this repository you will find:
 - A folder called "images" that contains all of the images used in the page
 - Folder called "styles" where you can see the styles used for the layout
 
-## Executing
-
-To run the program you must double click on the "index.html" file, where you will open the trackgenix page in your browser
-
-
+## Guideline
+- Go to the file "BaSP-M2022-Etapa-1"
+- Access to the folder "Semana-03"
+- Open the file "index.html" on your browser
+ 
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: matiasjoaquinreynoso@gmail.com
+<p align="right"><i>Created by Matias Reynoso</i></p>
