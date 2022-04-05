@@ -26,7 +26,6 @@ body {
     top: 0;
     width: calc(100% - 288px);
     height: 100px;
-    z-index: 100;
     padding: 40px;
     margin-left: 316px;
 }
@@ -89,8 +88,7 @@ nav {
     top: 0;
     left: 0;
     width: 288px;
-    height: 100%;
-    z-index: 200;
+    height: 1000px;
     background-color: #ddd;
     font-size: 20px;
 }
@@ -219,7 +217,7 @@ nav > ul > li {
 #features > h2 {
     position: absolute;
     top: 84px;
-    margin-left: 60px;
+    margin-left: 66px;
 }
   
 #features > ul {
@@ -269,7 +267,7 @@ nav > ul > li {
 
 #why-trackgenix > h2 {
     margin-bottom: 60px;
-    margin-left: 50px;
+    margin-left: 70px;
 } 
 
 .wtrackgenix-item:nth-child(3), .wtrackgenix-item:nth-child(5) {
