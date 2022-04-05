@@ -8,374 +8,404 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER + COMPONENTS */
+/* BODY */
 
 body {
-    background-color: #ffffff;
-    color: #373867;
-    font-family:'Roboto', sans-serif;
-    font-weight: 400;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
 }
 
-.header {
-    background: #AACE9B;
-    color:#373867;
-    text-align: left;
-    font-weight: 700;
-    position: relative;
-    top: 0;
-    width: calc(100% - 288px);
-    height: 100px;
-    padding: 40px;
-    margin-left: 316px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header h1 {
-    color: #373867;
-    font-size: 50px;  
-}
+/* COMPONENTS */
 
 h2 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-h3 {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-} 
-
-h4 {
-    text-align: center;
-  
-}
-p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
+    color: #373867;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 img {
     border-radius: 5px;
 } 
 
-section {
-    position: relative;
-    margin: 54px;
-} 
-
-main {
-    padding-top: 100px;
-    padding-left: 288px;
+h4 {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-article {
-    position: relative;
-    margin: 54px;
+p {
+    color: #373867;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
-/* SIDEBAR */
-nav {
-    position: fixed;
-    padding: 35px 14px;
-    top: 0;
-    left: 0;
-    width: 288px;
-    height: 1000px;
-    background-color: #ddd;
-    font-size: 20px;
+/* SIDEBAR + COMPONENTS */
+
+.side-bar {
+    float: left;
+    background-color: #DADADA;
+    width: 400px;
+    height: 3900px;
+    padding: 50px;
+    margin-right: 100px;
 }
 
-nav > h2 {
-    margin-top: 70px;
-    font-size: 30px;
-    margin-left: 20px;
+.bar, .btn-log, .btn-sign, button {
+    float:left;
+    padding: 12px 35px 12px 35px;
+    margin: auto;
+    border: none;
 }
 
-nav > ul {
-    margin-left: 20px;
-    padding: 0;
-    list-style-type: none;
-}
-  
-nav > ul > li {
-    margin-left: 20px;
-    margin: 20px 0;
-    line-height: 23px;
-}
-
-
-#sidebar-search {
+.bar {
     width: 100%;
-    height: 37px;
-    font-size: 14px;
-    padding-left: 5px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    border-color: #373867;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
-.login-form-send {
-    height: 46px;
-    padding: 14px 36px;
-    border: 1px solid #373867;
-    border-radius: 5px;
-    background-color: #373867;
-    color:  #fff;
-    margin-left: 20px;
+.btn-log, .btn-sign {
+    margin: 25px 0 25px 0;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
 }
-  
-.signup-form-send {
-    height: 46px;
-    padding: 14px 36px;
-    border: 1px solid #AACE9B;
-    border-radius: 5px;
+
+.btn-log {
+    background-color: #49A37B;
+    color: #FFF
+}
+
+.btn-sign {
+    background-color: #373867;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+button {
     background-color: #AACE9B;
     color: #373867;
-    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-
-/*  WHAT IS TRACKGENIX */
-
-#what-is-trackgenix{
-    position: relative;
-    padding-top: 49px;
-    height: 500px;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+.btn-up {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-#what-is-trackgenix > h2 {
-    position: absolute;
-    top: 84px;
-    margin-left: 50px;
+nav {
+    float: left;
+    width: 100%;
 }
 
-#what-is-trackgenix > p {
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-    width: 420px;
-    margin-left: 50px;
+nav ul {
+    list-style: none;
+    padding: 5px 0 25px 0;
+    border-bottom: solid 1px #49A37B;
+    margin-bottom: 200px;
 }
 
-#what-is-trackgenix > img {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    width: 525px;
-    height: 401px;
+nav ul li {
+    font-size: 18px;
+    color: #373867;
+    line-height: 30px;
+    
 }
 
-/*  OUR HISTORY */
-
-#our-history {
-    position: relative;
-    padding-top: 49px;
-    height: 500px;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+nav ul a:link {
+    text-decoration: underline;
+    color: #373867;
 }
 
-#our-history > h2 {
-    position: absolute;
-    top: 84px;
-    margin-left: 50px;
+nav span {
+    color: #49A37B;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 1px #49A37B;
+    
 }
 
-#our-history > p {
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-    width: 420px;
-    margin-left: 50px;
+/* HEADER + MAIN CONTENT*/
+
+#main-title, #features, #whytrackgenix, #form {
+    padding-left: 500px;
+    padding-right: 100px;
 }
 
-#our-history > img {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    width: 525px;
-    height: 401px;
+h1 {
+    color: #373867;
+    font-size: 80px;
+    font-weight: bold;
+    max-width: 100%;
+    border-bottom: solid 4px #373867;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.content01 {
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.content01 span {
+    color: #49A37B;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content01 p {
+    width: 45%;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.content01 img {
+    float: right;
+    width: 685px;
+    height: 415px;
+    margin-top: 50px;
+}
+
+.content02 {
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.content02 span {
+    color: #49A37B;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 640px;
+}
+
+.content02 p {
+    float: right;
+    width: 52.5%;
+    margin-top: 60px;
+    line-height: 30px;
+}
+
+.content02 img {
+    float: left;
+    width: 580px;
+    height: 285px;
+    margin-top: 20px;
+}
+
+.content02 button {
+    margin-left: 40px;
+    margin-top: 25px;
+    float: left;
 }
 
 /* FEATURES */
 
-#features {
-    position: relative;
-    padding-top: 49px;
-    height: 500px;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
-}
-  
-#features > h2 {
-    position: absolute;
-    top: 84px;
-    margin-left: 66px;
-}
-  
-#features > ul {
-    position: absolute;
-    left: 0;
-    top: 122px;
-    width: 350px;
-    height: 120px;
-    padding-left: 20px;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-  
-#features > ul > li {
-    font-size: 20px;
-    margin-top: 30px;
-}
-  
-#features > img {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    width: 525px;
-    height: 401px;
+.textcontent {
+    float: left;
+    max-width: 100%;
 }
 
-.button-learn {
-    height: 46px;
-    margin-left: 1350px;
-    padding: 14px 36px;
-    border: 1px solid #AACE9B;
-    border-radius: 5px;
-    background-color: #AACE9B;
-    color: #373867;
-    margin-top: 420px;
+.textcontent h2 {
+    max-width: 100%;
+    border-bottom: solid 3px #373867;
+    padding-top: 150px;
+    padding-bottom: 5px;
 }
-  
+
+.textcontent ul {
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.textcontent ul li {
+    color: #373867;
+    font-size: 1.25rem;
+    margin-left: 75px;
+}
+
+.textcontent ul li span {
+    font-weight: bold;
+}
+
+.textcontent p {
+    margin-top: 25px;
+    line-height: 30px;
+}
+
 /* WHY-TRACKGENIX */
 
-#why-trackgenix {
-    position: relative;
-    padding-top: 50px;
-    height: 461px;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
-    margin: 50px;
-} 
-
-#why-trackgenix > h2 {
-    margin-bottom: 60px;
-    margin-left: 70px;
-} 
-
-.wtrackgenix-item:nth-child(3), .wtrackgenix-item:nth-child(5) {
-    margin-left: 150px;
-} 
-
-.wtrackgenix-item { 
-    position: relative;
-    display: inline-block;
-    width: 490px;
-    height: 150px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    margin-left: 270px;
-} 
-
-.wtrackgenix-item > i {
-    position: absolute;
-    margin-right: 20px;
-    font-size: 130px;
-} 
-
-.wtrackgenix-item > h3 {
-    position: relative;
-    left: 140px;
-    width: 350px;
+#whytrackgenix .contentleft, #whytrackgenix .contentright {
+    float: left;
+    width: 100%;
 }
 
-.wtrackgenix-item > p {
-    position: relative;
-    top: 5px;
-    left: 140px;
-    width: 350px;
+.contentleft h2 {
+    max-width: 100%;
+    border-bottom: solid 3px #373867;
+    margin-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #373867;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contentleft .content01 img {
+    float: left;
+    width: 45%;
+    height: 230px;
+    margin-top: 50px;
+    border-radius: 50px;
+    border: solid 2px #373867;
+}
+
+.contentleft h3 {
+    float: right;
+    width: 40%;
+    margin-right: 2.5%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contentleft p {
+    float: right;
+    width: 40%;
+    margin-right: 2.5%;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contentleft button {
+    margin-left: 27.5%;
+    margin-top: 25px;
+    float: left;
+}
+
+.contentright .content02 img {
+    float: right;
+    margin-top: 50px;
+    width: 45%;
+    height: 230px;
+    border-radius: 50px;
+    border: solid 2px #373867;
+}
+
+.contentright h3 {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contentright p {
+    float: left;
+    width: 40%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contentright button {
+    margin-left: 17.5%;
+    margin-top: 25px;
+    float: left;
+}
+
+/* CONTACT-US */
+#form {
+    width: 100%;
+    margin-top: 2150px;
+}
+
+#form h2 {
+    max-width: 100%;
+    border-bottom: solid 3px #373867;
+    margin-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 5px;
+}
+
+.fields {
+    float: left;
+    width: 100%;
+}
+
+label {
+    width: 100%;
+    float: left;
+    color:#373867;
+    font-size: 1rem;
+}
+
+input, select {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 30%;
+    max-width: 100%;
+    float: left;
+    padding: 5px;
     font-size: 14px;
 }
 
-/* CONTACT US */
-
-#contact-us {
-    position: relative;
-    height: 512px;
-    padding: 50px 0;
-    box-shadow: 0px -1px 0px 0px #aaaaaa inset;
+.fieldtextarea {
+    float: left;
+    width: 100%;
 }
 
-#contact-name, #contact-email {
-    display: inline-block;
-    width: 500px;
-    height: 37px;
-    margin-top: 50px;
-    padding-left: 10px;
+textarea {
+    float: left;
+    padding: 5px;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
-#contact-area {
-    width: 1037px;
-    height: 37px;
-    margin: 24px 0;
-    border-radius: 2px;
-    border: 0.5px solid #767676;
-    font-size: calc(40px /3);
-    color: #181717;
+.formbtn {
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 150px;
 }
-  
-#contact-message {
-    width: 1037px;
-    height: 140px;
-    margin-bottom: 24px;
-    padding-top: 10px;
-    padding-left: 5px;
-    border-radius: 2px;
-    border: 0.5px solid #767676;
-    color: #767676;
+
+.reset {
+    background-color: #DADADA;
+    margin-left: 10px;
 }
-  
-.contact-form-send {
-    height: 46px;
-    padding: 14px 36px;
-    border: 1px solid #373867;
-    border-radius: 5px;
+
+/* FOOTER */
+
+footer {
+    z-index: 2;
+    float: left;
     background-color: #373867;
-    color:  #fff;
-    
-}
-  
-.contact-form-reset {
-    height: 46px;
-    margin-left: 15px;
-    padding: 14px 36px;
-    border: 1px solid #AACE9B;
-    border-radius: 5px;
-    background-color: #AACE9B;
-    color: #373867;
+    width: 100%;
 }
 
-/* OUR SERVICES */
+/* OUR-SERVICES */
 
-#our-services{
-    position: relative;
-    height: 316px;
-    padding-top: 50px;
-    padding-left: 135px;
-}
-  
 .our-services-item {
     position: relative;
     display: inline-block;
     width: 200px;
-    margin-left: 180px;
+    margin-left: 250px;
+    margin-bottom: 30px;
 }
   
 .our-services-item > ol {
@@ -383,35 +413,25 @@ nav > ul > li {
     padding: 20px;
 }
 
-/* SOCIAL MEDIA */
-.social-media {
-    display: inline-block;
+footer h2 {
+    color: #FFF;
+    margin-top: 50px;
 }
 
-.social-media > li {
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 20px;
-    font-size: 20px;
+footer ol li {
+    color: #FFF;
+    font-size: 15px;
 }
 
-/* FOOTER */
+/* SOCIAL-MEDIA */
 
-#footer {
-    position: relative;
-    height: 100px;
-    top: 0;
-    width: calc(100% - 288px);
-    right: 0px;
-    z-index: 100;
-    padding: 30px;
-    margin-left: 316px;
-    box-shadow: inset 0 4px 0 #373867;
-    background-color: #373867;
-}
-
-#footer > .social-media {
-    display: block;
+#socialmedia {
+    background-color: #FFF;
+    padding: 25px 0 25px 0;
     text-align: center;
-    margin-bottom: 6px;
+}
+
+#socialmedia a i {
+    color: #373867;
+    padding: 0 5px 0 5px;
 }
