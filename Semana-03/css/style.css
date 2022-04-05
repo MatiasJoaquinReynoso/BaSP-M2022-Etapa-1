@@ -219,7 +219,7 @@ nav > ul > li {
 #features > h2 {
     position: absolute;
     top: 84px;
-    margin-left: 50px;
+    margin-left: 60px;
 }
   
 #features > ul {
@@ -330,7 +330,7 @@ nav > ul > li {
     border-radius: 2px;
     border: 0.5px solid #767676;
     font-size: calc(40px /3);
-    color: #767676;
+    color: #181717;
 }
   
 #contact-message {
