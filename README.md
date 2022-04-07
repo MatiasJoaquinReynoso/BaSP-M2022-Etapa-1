@@ -18,7 +18,11 @@ Then the problem was to create an HTML file that has the same content as the lan
 ```
 We are going to style the html file created using css.
 ```
-
+### Week 04
+```
+This week we had to style the landing from week 2-3 using flexbox. The styles must be responsive. What does responsive mean? is about creating web pages that look good on all devices!
+A responsive web design will automatically adjust for different screen sizes and viewports.
+```
 ## What will we find on the page?
 - A sidebar where you can redirect us to home, sign up and sign in. It will also contain the contact of the company.
 - Sections explaining what trackgenix is dedicated to.
