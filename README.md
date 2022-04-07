@@ -1,5 +1,5 @@
 # Trackgenix
-## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 3RD WEEK PROJECT
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 4TH WEEK PROJECT
 
 ## What is Trackgenix?
 ```
@@ -40,7 +40,7 @@ In this repository you will find:
 
 ## Guideline
 - Go to the file "BaSP-M2022-Etapa-1"
-- Access to the folder "Semana-03"
+- Access to the folder "Semana-04" to see the latest updates.
 - Open the file "index.html" on your browser
  
 ## Contact
