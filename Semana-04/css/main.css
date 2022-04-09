@@ -15,8 +15,7 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
-    margin-top: 30px;
-
+    margin-top: 30px
 }
 
 #what-is-trackgenix {
@@ -29,7 +28,6 @@
 img {
     max-width: 50%;
     height: auto;
-    
 }
 
 #our-history {
@@ -37,7 +35,6 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
 }
 
 img {
@@ -75,7 +72,6 @@ img {
 }
 
 #features ul li {
-    
     color: #373867;
     font-size: 1.25rem;
     margin-left: 75px;
