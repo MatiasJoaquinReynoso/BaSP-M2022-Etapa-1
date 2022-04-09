@@ -1,0 +1,82 @@
+#trackgenix-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #49A37B;
+}
+
+#trackgenix-info p {
+    text-align: center;
+}
+
+#trackgenix-info h2 {
+    color: #49A37B;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+#what-is-trackgenix {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    
+}
+
+#our-history {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#features p {
+    text-align: center;
+}
+
+#features h2 {
+    font-weight: bold;
+    color: #373867;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color:#373867;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#features ul {
+    margin-top: 15px;
+    line-height: 30px;
+    
+}
+
+#features ul li {
+    
+    color: #373867;
+    font-size: 1.25rem;
+    margin-left: 75px;
+}

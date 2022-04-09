@@ -7,20 +7,20 @@
     <script src="https://kit.fontawesome.com/8bedfba391.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Semana-04/css/reset.css">
     <link rel="stylesheet" href="/Semana-04/css/styles.css">
-    <link rel="stylesheet" href="/Semana-04/css/sidebar.css">
-    <link rel="stylesheet" href="/Semana-04/css/header.css">
-    <link rel="stylesheet" href="/Semana-04/css/main.css">
     <link rel="stylesheet" href="/Semana-04/css/footer.css">
+    <link rel="stylesheet" href="/Semana-04/css/sidebar.css">
+    <link rel="stylesheet" href="/Semana-04/css/main.css">
+    <link rel="stylesheet" href="/Semana-04/css/header.css">
     <title>Trackgenix SA</title>
 </head>
     <body>
         <!-- SIDEBAR -->
-        <section class="side-bar">
+        <section id="side-bar">
             <div class="search-bar">
                 <input class="bar" type="text" name="" placeholder="Search...">
-                <div class="btn-up">
-                    <button class="btn-log">Log In</button>
-                    <button class="btn-sign">Sign Up</button>
+                <div id="btn-up">
+                    <button id="btn-log">Log In</button>
+                    <button id="btn-sign">Sign Up</button>
                 </div>
             </div>
             <nav>
@@ -32,10 +32,10 @@
                     <li><a href="#features">Features
                     </a>
                     </li>
-                    <li><a href="#whytrackgenix">Why Trackgenix?
+                    <li><a href="#why-trackgenix">Why Trackgenix?
                     </a>
                     </li>
-                    <li><a href="#form">Contact Us
+                    <li><a href="#contact-us">Contact Us
                     </a></li>
                 </ul>
                 <span>Get in Touch</span>
@@ -49,36 +49,33 @@
                 </ul>
             </nav>
         </section>
-        <!-- MAIN-CONTENT -->
-        <section id="main-title">
+        <header id="trackgenix-title">  
             <h1>
                 Trackgenix SA
             </h1>
-            <div class="content01">
-                <span>What is Trackgenix</span>
-                <img src="/Semana-03/imgs/computer.jpg">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-                <p>    
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                </p>
+        </header>
+        <main> 
+        <section id="trackgenix-info">  
+            <div id="what-is-trackgenix">
+            <h2>What is Trackgenix</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </p>
+            <img src="/Semana-04/imgs/computer.jpg">
             </div>
-            <div class="content02">
-                <span>Our History</span>
+            <div id="our-history">
+                <h2>Our History</h2>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 </p>
-                <img src="/Semana-03/imgs/learning.jpg">
+                <img src="/Semana-04/imgs/learning.jpg">
                 <button>Learn More</button>
             </div>
         </section>
         <!-- FEATURES -->
         <section id="features">
-            <div class="textcontent">
                 <h2>
                     Features
                 </h2>
@@ -103,16 +100,13 @@
                         <span>Item 5:</span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </li>
                 </ul>
-            </div>
         </section>
         <!-- WHY-TRACKGENIX -->
-        <section id="whytrackgenix">
-            <div class="contentleft">
-                <h2>
-                    Why Trackgenix?
-                </h2>
-                <div class="content01">
-                    <img src="/Semana-03/imgs/computer.jpg">
+        <section id="why-trackgenix">
+            <div class="content-left">
+                <h2>Why Trackgenix?</h2>
+                <div class="why-content-first">
+                    <img src="/Semana-04/imgs/computer.jpg">
                     <h3>
                         Subheader
                     </h3>
@@ -122,21 +116,19 @@
                     <button>Learn More</button>
                 </div>
             </div>
-            <div class="contentright">
-                <div class="content02">
-                    <h3>
-                        Subheader
-                    </h3>
-                    <img src="/Semana-03/imgs/learning.jpg">
+            <div class="content-right">
+                <div class="why-content-second">
+                    <h3>Subheader</h3>
+                    <img src="/Semana-04/imgs/learning.jpg">
                     <p>
                         Lorem Ipsum has been the industry's standard
                     </p>
                     <button>Learn More</button>
                 </div>
             </div>
-            <div class="contentleft">
-                <div class="content01">
-                    <img src="/Semana-03/imgs/learning.jpg">
+            <div class="content-left">
+                <div class="why-content-first">
+                    <img src="/Semana-04/imgs/learning.jpg">
                     <h3>
                         Subheader
                     </h3>
@@ -146,12 +138,12 @@
                     <button>Learn More</button>
                 </div>
             </div>
-            <div class="contentright">
-                <div class="content02">
+            <div class="content-right">
+                <div class="why-content-second">
                     <h3>
                         Subheader
                     </h3>
-                    <img src="/Semana-03/imgs/computer.jpg">
+                    <img src="/Semana-04/imgs/computer.jpg">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
@@ -160,11 +152,10 @@
             </div>
         </section>
         <!-- CONTACT-US -->
-        <section id="form">
+        <section id="contact-us">
             <h2>
                 Contact Us
             </h2>
-            <form action="#">
                 <div class="fields">
                     <label for="field name">Name</label>
                     <input type="text" placeholder="Insert your name" required>
@@ -179,17 +170,17 @@
                         <option value="3">Project Manager</option>
                         <option value="4">Human Resources</option>
                     </select>
-                <div class="fieldtextarea">
+                <div id="field-textarea">
                     <textarea cols="30" rows="10" placeholder="Write us a message..." required></textarea>
                 </div>
-                <div class="formbtn">
-                    <button class="sendmes" type="submit">Send Message</button>
-                    <button class="reset" type="submit">Reset</button>
+                <div id="contact-btn">
+                    <button id="send-message" type="submit">Send Message</button>
+                    <button id="reset" type="submit">Reset</button>
                 </div>
-            </form>
         </section>
+        </main>
         <!-- Footer -->
-        <footer class="font-roboto">
+        <footer>
             <h2>
                 Trackgenix
             </h2>
@@ -250,7 +241,7 @@
                     </li>
                 </ol>
             </div>
-            <section id="socialmedia">
+            <section id="social-media">
                 <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
