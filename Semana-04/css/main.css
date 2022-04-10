@@ -1,3 +1,5 @@
+/*------ MAIN SECTION ------*/
+
 #trackgenix-info {
     display: flex;
     flex-direction: column;
@@ -6,16 +8,13 @@
     color: #49A37B;
 }
 
-#trackgenix-info p {
-    text-align: center;
-}
-
 #trackgenix-info h2 {
-    color: #49A37B;
+    margin-bottom: 30px;
+    margin-top: 60px;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 30px;
-    margin-top: 30px
+    color: #49A37B;
+    border-bottom: solid 3px #fff
 }
 
 #what-is-trackgenix {
@@ -25,9 +24,26 @@
     align-items: center;
 }
 
-img {
-    max-width: 50%;
-    height: auto;
+#what-is-trackgenix p {
+    margin: 5%;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    color: #373867;
+}
+
+.learn-more  {
+    margin-top: 10px;
+    padding: 6px 8px;
+    background-color: #AACE9B;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #373867;
 }
 
 #our-history {
@@ -37,42 +53,155 @@ img {
     align-items: center;
 }
 
-img {
-    max-width: 50%;
-    height: auto;
+#our-history p {
+    margin: 5%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    color: #373867;
 }
 
+/*------ FEATURES------*/
+
 #features {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
 }
 
 #features p {
-    text-align: center;
-}
-
-#features h2 {
-    font-weight: bold;
+    margin: 5%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 40px;
     color: #373867;
-    border-bottom-style: solid;
-    border-width: 3px;
-    border-color:#373867;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 #features ul {
+    margin: 5%;
     margin-top: 15px;
+    margin-bottom: 20px;
     line-height: 30px;
+    font-size: 25px;
     
 }
 
 #features ul li {
     color: #373867;
-    font-size: 1.25rem;
-    margin-left: 75px;
+    font-weight: 300;
+    
+    
+}
+
+/*------ WHY-TRACKGENIX ------*/
+
+#why-trackgenix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #49A37B;
+}
+
+
+.why-content-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.why-content-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+/*------ CONTACT-US ------*/
+
+#contact-us form {
+    margin: 30px 41px 30px 30px;
+}
+
+#contact-us label {
+    display: block;
+    padding-bottom: 3px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#contact-us input, select, textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 25px;
+    padding: 4px 6px;
+    border: 0.5px solid #373867;
+    border-radius: 3px;
+    color: #373867;
+}
+
+#contact-us select {
+    box-sizing: unset;
+}
+
+#contact-us input::placeholder, textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #373867;
+    opacity: 0.5;
+}
+
+textarea {
+    margin-top: 15px;
+    height: 80px;
+    font-family: 'Roboto';
+    color: #373867;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 14px 36px;
+    border-radius: 3.7px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #373867;
+}
+
+button.btn-send {
+    background: #AACE9B;
+}
+
+button.btn-reset {
+    background: #DADADA;
 }
