@@ -1,10 +1,13 @@
-footer h3 {
+
+
+#services-list h3 {
     display: none;
+    
 }
 
 footer h4 {
-    margin-bottom: 10px;
-    font-size: 22px;
+    margin-bottom: 15px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -29,7 +32,7 @@ footer ol {
 
 footer ol li {
     margin-left: 9%;
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 25px;
 }
@@ -46,23 +49,57 @@ footer ol li {
     color: #373867;
 }
 
-#social-media a i:hover {
-    color: #49A37B;
-}
 
-
-/* media queries 768px */
-@media (min-width: 768px) {
-}
-
-
-/* media queries 1024px */
-@media (min-width: 1024px) {
-        footer h2 {
+@media screen and (min-width: 1024px) {
+    
+    #services-list h3 {
         display: flex;
-        justify-content: center;
-        margin: 10px auto 35px auto;
-        padding: 0;
-        color: #FFF;
+        flex-direction: column;
+        justify-content: right;
+        margin-left: 10%;
+        margin-bottom: 5px;
+        width: 0%;
+        color:#FFF
+    }
+
+    .our-services-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 13%;
+    }
+
+    #services-list {
+    padding: 40px;
+    margin: 0;
+    background-color: #373867;
+    color: #FFF;
+    }      
+}
+
+@media screen and (min-width: 768px) {
+    #services-list {
+    padding-top: 0;
+    }
+
+    #services-list h3 {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto 35px auto;
+    color: #FFF;
+    }
+
+    footer h4 {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    footer ol li {
+        margin-left: 9%;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
     }
 }
+

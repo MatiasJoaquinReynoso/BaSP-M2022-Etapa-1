@@ -7,50 +7,53 @@
     <script src="https://kit.fontawesome.com/8bedfba391.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css"> 
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Trackgenix SA</title>
 </head>
     <body>
         <!-- SIDEBAR -->
-        <section id="side-bar">
-            <div class="search-bar">
-                <input class="bar" type="text" name="" placeholder="Search...">
-                <div id="btn-up">
-                    <button id="btn-log">Log In</button>
-                    <button id="btn-sign">Sign Up</button>
+        <aside>
+            <div class="sidebar">
+                <form>
+                    <div class="divform">
+                        <input type="text" class="search" placeholder="Search...">
+                        <div class="nav-buttons">
+                            <input class="log-in" type="button" value="log in">
+                            <input class="sign-up" type="button" value="sign up">
+                        </div>
+                    </div>
+                </form>
+                <div class="menu">
+                    <p>menu</p>
+                    <ul>
+                        <li class="homepage">
+                            <a href="#">Homepage</a>
+                        </li>
+                        <li class="Generic">
+                            <a href="#">Generic</a>
+                        </li>
+                        <li class="contact-us">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <nav>
-                <span>Menu</span>
-                <ul>
-                    <li><a href="#main-title">Homepage
-                    </a>
-                    </li>
-                    <li><a href="#features">Features
-                    </a>
-                    </li>
-                    <li><a href="#why-trackgenix">Why Trackgenix?
-                    </a>
-                    </li>
-                    <li><a href="#contact-us">Contact Us
-                    </a></li>
-                </ul>
-                <span>Get in Touch</span>
-                <ul>
+                <div class="get-in-touch">
+                    <p>Get in touch
+                    </p>
                     <li><a href="https://www.gmail.com">mailinfo@trackgenix.com
                     </a></li>
                     <li><a href="">123-456789
                     </a></li>
                     <li><a href="https://www.google.com.ar/maps/preview">123 fake road #2000 Rosario, Argentina
                     </a></li>
-                </ul>
-            </nav>
-        </section>
-        <header id="trackgenix-title">  
-            <h1>
+                </div>
+            </div>
+        </aside>
+        <header id="header-title">  
+            <h1 id="trackgenix-title">
                 Trackgenix SA
             </h1>
         </header>
@@ -210,10 +213,10 @@
         </main>
         <!-- Footer -->
         <footer>
-            <h3>
-                Trackgenix
-            </h3>
             <div id="services-list">
+                <h3>
+                    Trackgenix
+                </h3>
                 <div class="our-services-item">
                     <h4>
                         Products
