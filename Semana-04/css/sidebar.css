@@ -1,107 +1,120 @@
 aside {
-    display: none;
-  }
+  display: none;
+}
   
-  aside {
-    position: fixed;
-    flex-direction: column;
-    background-color: #b1b2b6;
-    height: 100vh;
-    width: 20%;
-  }
+aside {
+  position: fixed;
+  flex-direction: column;
+  background-color: #b1b2b6;
+  height: 100vh;
+  width: 20%;
+}
   
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-  }
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
   
-  .search {
-    width: 170px;
-    height: 20px;
-    margin-top: 25px;
-    border-radius: 3px;
-    border: none;
-  }
+.search {
+  width: 190px;
+  height: 20px;
+  margin-top: 25px;
+  border-radius: 3px;
+  border: none;
+}
   
-  .nav-buttons {
-    display: flex;
-  }
+.nav-buttons {
+  display: flex;
+}
   
-  .log-in {
-    width: 65px;
-    height: 20px;
-    margin: 10px;
-    background-color: #49a371;
-    border-radius: 8px;
-    border: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #fff
-  }
+.log-in {
+  width: 65px;
+  height: 20px;
+  margin: 10px;
+  background-color: #49a371;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff
+}
   
-  .sign-up {
-    width: 65px;
-    height: 20px;
-    margin: 10px;
-    background-color: #373867;
-    border-radius: 8px;
-    border: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #fff
-  }
+.sign-up {
+  width: 65px;
+  height: 20px;
+  margin: 10px;
+  background-color: #373867;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff
+}
   
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 40px;
-    line-height: 150%;
-    font-size: 15px;
-  }
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+  line-height: 150%;
+  font-size: 15px;
+}
   
-  .get-in-touch {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 170px;
-    line-height: 150%;
-    font-size: 15px;
-  }
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 170px;
+  line-height: 150%;
+  font-size: 15px;
+}
   
-  aside p {
-    font-size: 15px;
-    }
+aside p {
+  font-size: 15px;
+}
     
-    aside li {
-      font-size: 15px;
-    }
+aside li {
+  font-size: 15px;
+}
     
-    aside sign-up {
-      width: 102px;
-      height: 35px;
-      padding: 10px 27px;
-      background-color: #373867;
-      border-radius: 15px;
-      border: none;
-      text-transform: uppercase;
-      font-size: 12px;
-      color: #fff
-    }
+aside .sign-up {
+  width: 102px;
+  height: 35px;
+  padding: 10px 10px;
+  background-color: #373867;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff
+}
+
+aside .log-in  {
+  width: 102px;
+  height: 35px;
+  padding: 10px 10px;;
+  background-color: #49a371;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff
+}
+
   
-    .menu > p {
-      border-bottom: 1.5px solid #49a371;
-      max-width: 232px;
-      text-transform: uppercase; 
+.menu > p {
+  border-bottom: 1.5px solid #49a371;
+  max-width: 232px;
+  text-transform: uppercase; 
        
-    }
+}
   
-    .get-in-touch > p {
-      border-bottom: 1.5px solid #49a371;
-      max-width: 232px;
-      text-transform: uppercase;
-    }
+.get-in-touch > p {
+    border-bottom: 1.5px solid #49a371;
+    max-width: 232px;
+    text-transform: uppercase;
+  }
   
   
   /* media queries 1024px */
@@ -110,7 +123,7 @@ aside {
       aside {
       display: flex;
       flex-direction: column;
-      height: 100vh;
+      height: 100%;
       width: 20%;
   
     }

@@ -254,19 +254,17 @@ button.btn-reset {
         margin: 2% 0 2% 6%;
     }
 
-    #whytrackgenix img {
-        width: 35%;
-        height: auto;
-        border-radius: 50px;
-        border: solid 2px #373867;
-    }
 
     .container {
         flex-direction: row-reverse;
+        text-align: center;
+        width: 50%;
     }
 
     .content-mid {
         flex-direction: row;
+        text-align: center;
+        width: 50%;
     
     }
 
@@ -291,11 +289,13 @@ button.btn-reset {
     #what-is-trackgenix {
         flex-direction: row-reverse;
         text-align: center;
+        width: 50%;
         
     }
 
     #our-history {
         flex-direction: row;
+        width: 50%;
     
     }
 
@@ -315,82 +315,58 @@ button.btn-reset {
         margin: 2% 25% 2% 25%;
     }
 
-    .container, .content-mid{
-        display: flex;
+    #features {
+        display: block;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin: auto;
-        color: #373867;
-        
+        margin: 15%;
+        margin-bottom: 5px;
     }
     
-    .content-mid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 23px 0px;
-        border-bottom: 0.7px solid #373867;
-        border-top: 0.7px solid #373867;
-    }
-    
-    #why-trackgenix .text-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 20px;
-        font-size: 14px;
-        flex: 50;
-    }
-    
-    #why-trackgenix  h2 {
-        margin-top: 60px;
-    }
-    
-    #why-trackgenix .text-content h3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-bottom: 12px;
-        margin-top: 10px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 18px;
-    }
-    
-    #why-trackgenix p {
-        margin: 5%;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: center;
-        color: #373867;
-    }
-    
-    #why-trackgenix img {
-        width: 40%;
-        min-width: 400px;
-        border-radius: 10px;
-        margin: 10px;
-    }
-    
-    .btn-learn {
-        padding: 8px 12px;
-        margin-top: 10px;
-        border-radius: 3.7px;
-        border: none;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
-        color: #373867;
-        background: #AACE9B;
+    #features span {
+        font-weight: bold;
     }
 
-}
+    #features p {
+        font-size: 20px;
+    }
+    
+    #features h2 {
+        width: 90%;
+    }
+
+    #what-is-trackgenix {
+        flex-direction: row-reverse;
+        text-align: center;
+        width: 70%;
+        margin: 3% 20% 3% 20%;
+        
+    }
+
+    #our-history {
+        flex-direction: row;
+        width: 70%;
+        margin: 3% 25% 3% 25%;
+        margin-bottom: 5px;
+    
+    }
+
+    #what-is-trackgenix h2 {
+    color: #49A37B;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    }
+
+    #what-is-trackgenix p  {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    }
+
 
