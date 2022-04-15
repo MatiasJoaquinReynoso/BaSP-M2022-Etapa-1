@@ -23,6 +23,13 @@ We are going to style the html file created using css.
 This week we had to style the landing from week 2-3 using flexbox. The styles must be responsive. What does responsive mean? is about creating web pages that look good on all devices!
 A responsive web design will automatically adjust for different screen sizes and viewports.
 ```
+### Week 05
+```
+ We'll be working on basics concepts of Javascript. The challenge of this week is to solve the exercises of JS and make some fixes on index.html file of Week-04.
+```
+
+
+
 ## What will we find on the page?
 - A sidebar where you can redirect us to home, sign up and sign in. It will also contain the contact of the company.
 - Sections explaining what trackgenix is dedicated to.
@@ -40,7 +47,7 @@ In this repository you will find:
 
 ## Guideline
 - Go to the file "BaSP-M2022-Etapa-1"
-- Access to the folder "Semana-04" to see the latest updates.
+- Access to the folders "Semana-05" to see the latest updates.
 - Open the file "index.html" on your browser
  
 ## Contact
