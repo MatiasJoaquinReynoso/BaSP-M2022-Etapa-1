@@ -34,7 +34,8 @@ var mySumWithString = suma("f", 7);
 console.log('Sum:', mySum); // 11
 console.log('Sum with a string:', mySumWithString); // Nan
 
-// Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.
+// Crear una función validate integer que reciba un número como parámetro 
+// y devuelva verdadero si es un número entero.
 
 console.log('Exercise 6.c:');
 
