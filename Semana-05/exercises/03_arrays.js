@@ -27,8 +27,8 @@ console.log('Exercise 3.c:');
 var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
 "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-months.unshift('Primer elemento');
-months.push('Ultimo elemento');
+months.unshift('First element');
+months.push('Last element');
 
 console.log(months);
 
