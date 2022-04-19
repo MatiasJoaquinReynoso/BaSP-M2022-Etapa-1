@@ -25,7 +25,7 @@ A responsive web design will automatically adjust for different screen sizes and
 ```
 ### Week 05
 ```
- We'll be working on basics concepts of Javascript. The challenge of this week is to solve the exercises of JS and make some fixes on index.html file of Week-04.
+We'll be working on basics concepts of Javascript. The challenge of this week is to solve the exercises of JS and make some fixes on index.html file of Week-04.
 ```
 
 
@@ -49,6 +49,7 @@ In this repository you will find:
 - Go to the file "BaSP-M2022-Etapa-1"
 - Access to the folders "Semana-05" to see the latest updates.
 - Open the file "index.html" on your browser
+- Or click [HERE]((https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html)) to access directly index.html week-05 from GIT PAGES
  
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: matiasjoaquinreynoso@gmail.com
