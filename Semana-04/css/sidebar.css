@@ -7,7 +7,7 @@ aside {
   flex-direction: column;
   background-color: #b1b2b6;
   height: 100vh;
-  width: 20%;
+  width: 25%;
 }
   
 .sidebar {
@@ -17,15 +17,17 @@ aside {
 }
   
 .search {
-  width: 190px;
+  width: 250px;
   height: 20px;
   margin-top: 25px;
+  margin-left: 20px;
   border-radius: 3px;
   border: none;
 }
   
 .nav-buttons {
   display: flex;
+  margin-left: 20px;
 }
   
 .log-in {
@@ -129,3 +131,12 @@ aside .log-in  {
     }
   }
 
+  .search {
+    width: 150px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: none;
+  }
+    

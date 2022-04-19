@@ -5,7 +5,7 @@ console.log('--EXERCISE 5: FOR');
 
 console.log('Exercise 5.a:');
 
-var food = ['pera','banana','palta','tomate','lechuga'];
+var food = [' pear ',' banana ',' carrot ',' tomato ',' ettuce '];
 
 for (var x = 0; x < 5 ; x++) {
 	alert(food[x]);

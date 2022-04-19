@@ -1,30 +1,6 @@
-
-#header-title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 120px;
+header {
+    text-align: center;
+    padding-right: 3%;
+    padding-left: 5%;
+    margin-right: 7%;
 }
-
-#trackgenix-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    border-bottom: 5px solid #373867; 
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #373867; 
-}
-
-@media (min-width: 1024px) {
-    #trackgenix-title { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-    }
-    
-}
-  
