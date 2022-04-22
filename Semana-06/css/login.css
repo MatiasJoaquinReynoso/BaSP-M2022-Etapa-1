@@ -1,0 +1,45 @@
+.sign-in {
+    margin-top: 8%;
+    font-family: 'Roboto';
+    color: #373867CC;
+}
+.sign-in p {
+    font-size: 36px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+.log-in-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 50%;
+    margin-bottom: 40%;
+}
+.log-in-content label {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 12px;
+}
+.log-in-content input {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+}
+.remember-me {
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+.sign-in button {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 4%;
+    border: none;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color: #373867CC;
+}
+.sign-in span a { 
+    font-size: 12px;
+}
