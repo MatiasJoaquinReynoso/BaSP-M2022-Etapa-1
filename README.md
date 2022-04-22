@@ -27,8 +27,11 @@ A responsive web design will automatically adjust for different screen sizes and
 ```
 We'll be working on basics concepts of Javascript. The challenge of this week is to solve the exercises of JS and make some fixes on index.html file of Week-04.
 ```
-
-
+### Week 06
+```
+In week 06 we add LogIn and SignUp screens to the project.
+Made the screens dynamic using Javascript DOM. Added Sign up and Login functionalities and link them.
+```
 
 ## What will we find on the page?
 - A sidebar where you can redirect us to home, sign up and sign in. It will also contain the contact of the company.
