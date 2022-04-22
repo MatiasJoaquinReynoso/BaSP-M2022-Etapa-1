@@ -30,7 +30,7 @@ We'll be working on basics concepts of Javascript. The challenge of this week is
 ### Week 06
 ```
 In week 06 we add LogIn and SignUp screens to the project.
-Made the screens dynamic using Javascript DOM. Added Sign up and Login functionalities and link them.
+Made the screens dynamic using Javascript DOM. Add Sign up and Login functionalities and link them.
 ```
 
 ## What will we find on the page?
@@ -50,9 +50,9 @@ In this repository you will find:
 
 ## Guideline
 - Go to the file "BaSP-M2022-Etapa-1"
-- Access to the folders "Semana-05" to see the latest updates.
+- Access to the folders "Semana-06" to see the latest updates.
 - Open the file "index.html" on your browser
-- Or click [HERE](https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html) to access directly index.html week-05 from GIT PAGES
+- Or click https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html to access directly index.html week-06 from GIT PAGES
  
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: matiasjoaquinreynoso@gmail.com
