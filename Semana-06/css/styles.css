@@ -69,6 +69,7 @@ h1, .features-content h2, .why-trackgenix h2, .contact-us h2 {
     h1 {
         font-size: 70px;
         text-align: left;
+        margin-left: 5px;
     }
     label {
         font-size: 8px;

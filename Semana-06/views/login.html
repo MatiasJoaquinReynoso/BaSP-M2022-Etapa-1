@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -15,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap"
     rel="stylesheet">
-    <script src="../javascript/login.js"></script>
+    <script src="../javascript/login.js" type="text/javascript"></script>
     <title>Log-in</title>
 </head>
 <body>
@@ -35,11 +34,12 @@
         </form>
         <div class="account-buttons">
             <button class="buttons-account" id="log-in">
-                <a href="#"> Log in </a>
+                <a href="../views/login.html"> Log in </a>
             </button>
             <button class="buttons-account" id="sign-up">
-                <a href="#"> Sign up </a>
+                <a href="../views/employee-signup.html"> Sign up </a>
             </button>
+        </div>
         </div>
         <p class="menu"> Menu </p>
         <ul class="sub-menu">
@@ -65,18 +65,20 @@
         </ul>
     </nav>
     <form class="sign-in">
-        <p>Sign In</p>
+        <p>LOG IN</p>
         <div class="log-in-content"> 
             <label>E-mail</label>
-            <input type="text" placeholder="Enter e-mail">
+            <input id="email" name="email" type="text" placeholder="Enter e-mail" >
+            <span id="wrong-email"></span>
             <label>Password</label>
-            <input type="password" placeholder="Enter Password">
+            <input id="password" type="password" placeholder="Enter Password">
+            <span id="wrong-password"></span>
             <div class="remember-me">
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
             </div>
-            <button type="submit">Login</button>
+            <button id="send" type="submit" >Login</button>
             <span>
                 <a href="#">Forgot password?</a>
             </span>
@@ -140,6 +142,7 @@
             </div>
         </div>
         <div class="social-media">
+            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
