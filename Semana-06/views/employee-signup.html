@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,107 +14,131 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap"
     rel="stylesheet">
-
-    <title>Log-in</title>
-</head>
-<body>
+    <script src="../javascript/employee-signup.js"></script>
+    <title>Sign-up</title>
+  </head>
+  <body>
     <header>
-        <h1>Trackgenix SA</h1>
+      <h1> Trackgenix SA 
+      </h1>
     </header>
     <nav>
-        <form>
-            <div class="container-search">
-                <input class= "search" type="text" placeholder="Search">
-                <span class="icon">
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </span>
-            </div>
-        </form>
-        <div class="account-buttons">
-            <button class="buttons-account" id="log-in">
-                <a href="../views/login.html"> Log in </a>
-            </button>
-            <button class="buttons-account" id="sign-up">
-                <a href="../views/employee-signup.html"> Sign up </a>
-            </button>
+      <form>
+        <div class="container-search">
+          <input class= "search" type="text" placeholder="Search">
+          <span class="icon">
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+          </span>
         </div>
-        <p class="menu"> Menu </p>
-        <ul class="sub-menu">
-            <li>
-                <a href="#homepage">Homepage</a>
-            </li>
-            <li>
-                <a href="#features">Features</a>
-            </li>
-            <li>
-                <a href="#why-trackgenix">Why Trackgenix?</a>
-            </li>
-            <li>
-                <a href="#contact-us">Contact Us</a>
-            </li>
-        </ul>
-        <div class="get-in-touch">
-        <p class="menu">Get in touch</p>
-        <ul class="more-data">
-            <li>mailinfo@trackgenix.com</li>
-            <li>123-456789</li>
-            <li>123 fake road #2000 Rosario, Argentina</li>
-        </ul>
+      </form>
+      <div class="account-buttons">
+        <button class="buttons-account" id="log-in">
+          <a href="../views/login.html"> Log in </a>
+        </button>
+        <button class="buttons-account" id="sign-up">
+          <a href="../views/employee-signup.html"> Sign up </a>
+        </button>
+      </div>
+      <p class="menu"> Menu 
+      </p>
+      <ul class="sub-menu">
+        <li>
+            <a href="#homepage">Homepage</a>
+        </li>
+        <li>
+            <a href="#features">Features</a>
+        </li>
+        <li>
+          <a href="#why-trackgenix">Why Trackgenix?</a>
+        </li>
+          <li>
+            <a href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+      <div class="get-in-touch">
+      <p class="menu">Get in touch
+      </p>
+      <ul class="more-data">
+          <li>mailinfo@trackgenix.com
+          </li>
+          <li>123-456789
+          </li>
+          <li>123 fake road #2000 Rosario, Argentina
+          </li>
+      </ul>
+      </div>
     </nav>
-    <div class="form">
-        <p>Sign up</p>
-        <form class="sign-up-form">
-            <div class="content-sign-up-form">
-                <label class="label-name">Name:</label>
-                <input class="form-input" placeholder="Name" type="text">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="surname">Surname:</label>
-                <input class="form-surname" placeholder="Surname" type="text">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="label-id">Id:</label>
-                <input class="form-input" placeholder="Id" type="number">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="date-birth">Date of birth:</label>
-                <input class="form-birth" placeholder="Birth" type="date">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="label-phone-number">Phone Number:</label>
-                <input class="form-number" placeholder="Phone number" type="tel">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="label-address">Address:</label>
-                <input class="form-address" placeholder="Address" type="text">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="city">City:</label>
-                <input class="form-city" placeholder="City" type="text">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="postal-code">Postal code:</label>
-                <input class="form-pc" placeholder="Postal code" type="number">
-            </div>
-            
-            <div class="content-sign-up-form">
-                <label class="password">Password:</label>
-                <input class="form-password" placeholder="Password" type="password">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="email">Email:</label>
-                <input class="form-input" placeholder="Email" type="email">
-            </div>
-            <div class="content-sign-up-form">
-                <label class="repeat-password">Repeat password:</label>
-                <input class="form-input" placeholder="Repeat password" type="password">
-            </div>
-        </form>
-        <div class="button-sign-up">
-            <input type="button" value="Create">
-        </div>
-    </div> 
-</body>
+    <div class="page-content">
+      <div class="sign-up">
+          <h2>Sign up</h2>
+          <form class="sign-up-form">
+              <div class="form-container">
+                  <div class="status-control">
+                      <label>Name *</label>
+                      <input id='name' type="text" placeholder="Insert your name">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Surname *</label>
+                      <input id='surname' type="text" placeholder="Insert your surname">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>ID number *</label>
+                      <input id='idNumber' type="text" placeholder="Insert your ID number">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Birth date *</label>
+                      <input id='birthDate' type="date" placeholder="dd/mm/aaaa">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Phone number *</label>
+                      <input id='phoneNumber' type="text" placeholder="Insert your phone number">
+                      <p>Error message</p>
+                  </div>
+              </div>
+              <div class="form-container">
+                  <div class="status-control">
+                      <label>Address *</label>
+                      <input id='address' type="text" placeholder="Insert your Address">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Location *</label>
+                      <input id='location' type="text" placeholder="Insert your Location">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>PostCode *</label>
+                      <input id='postCode' type="text" placeholder="Insert postcode">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Email *</label>
+                      <input id="email" type="text" placeholder="Insert your email">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Password *</label>
+                      <input id='password' type="password" placeholder="************">
+                      <p>Error message</p>
+                  </div>
+                  <div class="status-control">
+                      <label>Repeat password *</label>
+                      <input id='repeatPassword' type="password" placeholder="************">
+                      <p>Error message</p>
+                  </div>
+              </div>
+          </form>
+          <form class="sign-up-btn">
+              <button type="submit" id="btn-sign-up">Create</button>
+          </form>
+      </div>
+  </div>
+
+  </body>
 </html>

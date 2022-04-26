@@ -1,71 +1,106 @@
-main {
-    height: 80%;
+.page-content .sign-up {
+    margin: 5%;
+    width: 70%;
+    border: solid 2px #373867;
+    border-radius: 15px;
+    box-shadow: 3px 4px 8px #373867;
+    text-align: center;
 }
-
-.form {
-    display: flex;
-    flex-direction: column;
+.page-content {
+   width: 90%;
+   margin-left: 400px;
 }
-
-.content-sign-up-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.content-sign-up-form input {
-    width: 450px;
-    height: 30px;
-    border: 1px solid #373867;
-    border-radius: 3px;
-    font-size: 12px;
-    margin: 10px 0px;
-}
-
-.form p {
-    margin-top: 20px;
+.page-content h2 {
     margin-bottom: 20px;
-}
-
-.content-sign-up-form label {
-    font-size: 20px;
-    font-style: bold;
+    padding: 15px 0;
+    background-color: #AACE9B;
+    border-radius: 15px 15px 0 0;
     font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
     color: #373867;
+    text-transform: uppercase;
 }
 
-.button-sign-up input {
-    width: 100px;
-    height: 30px;
-    margin-top: 30px;
-    border-radius: 4px;
-    border: 1px solid #373867;
-    background-color: #aace9b;
-    font-size: 15px;
-    color: #373867;
-}
-
-/* For  Desktop */
-
-@media (min-width: 900px) {
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.form-container {
+   flex:45;
+   margin: 0 47px 0 30px;
 }
 
 .sign-up-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 50%;
+    flex-direction: column;
 }
 
-.content-sign-up-form {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 40%;
+.sign-up-form label {
+    display: block;
+    padding-bottom: 3px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 14px;
 }
 
+.sign-up-form input {
+    font-family: 'Roboto';
+    padding: 4px 6px;
+    width: 100%;
+    height: 25px;
+    border: 0.5px solid #373867;
+    border-radius: 3px;
+    color: #373867;
+}
+
+.sign-up-form input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    color: #373867;
+    opacity: 0.5;
+}
+
+.sign-up-btn button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 14px 56px;
+    background: #AACE9B;
+    border-radius: 3.7px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #373867;
+}
+
+.sign-up-form a, .sign-up-form p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.sign-up-form p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #F33413;
+}
+
+.status-control p {
+    visibility: hidden;
+}
+
+.status-control.error input {
+    border: solid 1px #F33413;
+}
+
+.status-control.error p {
+    visibility: visible;
+}
+
+.status-control.error label, .status-control.error input {
+    color: #F33413;
+}
+
+.sign-up a {
+    display: block;
+    text-decoration: none;
 }

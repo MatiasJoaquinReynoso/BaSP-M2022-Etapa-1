@@ -31,7 +31,16 @@ We'll be working on basics concepts of Javascript. The challenge of this week is
 ```
 In week 06 we add LogIn and SignUp screens to the project.
 Made the screens dynamic using Javascript DOM. Add Sign up and Login functionalities and link them.
+
+Links:
+- Index: https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
+
+- Login: https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-06/views/login.html
+
+- Employee Sign up: https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-06/views/employee-signup.html
+
 ```
+
 
 ## What will we find on the page?
 - A sidebar where you can redirect us to home, sign up and sign in. It will also contain the contact of the company.
