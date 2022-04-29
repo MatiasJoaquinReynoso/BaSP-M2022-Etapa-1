@@ -40,7 +40,10 @@ Links:
 - Employee Sign up: https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-06/views/employee-signup.html
 
 ```
-
+### Week 07
+```
+In this week, we are going to work with JavaScript, learning about Promises and Callbacks, and HTTP solutions in asynchronous way. To see the code, yo have to go to "Semana-07" folder, or click here https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html  and see the results in the console.
+```
 
 ## What will we find on the page?
 - A sidebar where you can redirect us to home, sign up and sign in. It will also contain the contact of the company.
