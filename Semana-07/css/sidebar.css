@@ -1,0 +1,83 @@
+nav {
+  display: none;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  bottom: 1px;
+  background-color: #B1B2B6;
+  opacity: 0.9;
+}
+.container-search {
+  display: flex;
+  padding-top: 8%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.container-search input {
+  width: 95%;
+  border: none;
+  border-radius: 3px;
+  font-size: 10pt;
+}
+.container-search .icon {
+  margin-left: -20%;
+  margin-top: 1%;
+  top: 50%;
+  color: #B1B2B6;
+}
+.container-search button {
+  border: 0px;
+  background-color: #FFFFFF;
+  width: 5%;
+}
+.account-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.account-buttons a {
+    color: #FFFFFF;
+}
+.buttons-account {
+  width: 40%;
+  padding: 2%;
+  border: none;
+  border-radius: 3px;
+}
+#log-in {
+  background-color: #49A37B;
+}
+#sign-up {
+  background-color: #373867;
+}
+.menu {
+  margin-top: 10%;
+  padding-bottom: 2%;
+  border-bottom: solid;
+  border-width: 1.5;
+  border-color: #49A37B;
+  margin-left: 8%;
+  margin-right: 8%;
+  color: #373867;
+}
+.sub-menu {
+  margin-top: 4%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.sub-menu li {
+  margin-top: 1%;
+}
+.sub-menu li a {
+  color: #373867;
+}
+.get-in-touch {
+  margin-top: 30%;
+}
+.more-data li {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 4%;
+  color: #373867;
+}

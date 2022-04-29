@@ -1,0 +1,151 @@
+.main p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #373867CC;
+}
+.first-contain {
+    display: flex;
+    flex-direction: column;
+}
+.second-contain {
+    display: flex;
+    flex-direction: column;
+}
+.info-contain img {
+    max-width: 55%;
+}
+.info-contain p  {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.info-contain, .features-content, .why-trackgenix, .contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.info-contain h2 {
+    color: #49A37B;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.info-right, .info-left, .content-right-one, .content-left-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features-content h2, .why-trackgenix h2, .contact-us h2 {
+    margin-right: 20%;
+    margin-left: 20%;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.features-content p {
+    margin-left: 14%;
+    margin-right: 14%;
+}
+.features-content p, .why-trackgenix p {
+    display: flex;
+    text-align: justify;
+}
+.info-contain img, .why-trackgenix img {
+    margin: auto;
+    justify-content: center;
+    height: auto;
+}
+.features-content ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 14.5%;
+    margin-right: 13%;
+}
+.features-content ul li {
+    font-weight: 400;
+    font-size: 14px;
+    list-style: disc;
+    color: #373867
+}
+.item {
+    font-weight: 700;
+    line-height: 28px;
+    color: #373867
+}
+.first-image {
+    margin-bottom: 3%;
+}
+.why-trackgenix h3, .image-left-one, .image-right-two, .first-image, .second-image {
+    display: flex;
+    justify-content: center;
+}
+.image-right-two, .image-left-one {
+    margin-bottom: 3%;
+}
+.why-trackgenix img {
+    max-width: 50%;
+}
+.why-trackgenix p {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.content-right-one, .content-left-two {
+    margin-bottom: 3%;
+    border-bottom-style: solid;
+    border-width: 0.8px;
+    border-color: #373867;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form select {
+    margin-bottom: 2%;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+.contact-form label, .contact-form input,  .contact-form select {
+    padding: 1%;
+}
+.contact-form textarea {
+    margin-top: 2%;
+    padding-bottom: 10%;
+}
+.contact-form input, .contact-form select, .contact-form textarea {
+    border: 1px solid #373867;
+    border-radius: 4px;
+    font-weight: 400;
+}
+.buttons-contact {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.contact-send input, .contact-reset input {
+  margin: auto;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
+  border: none;
+  border-radius:5px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #373867CC;
+  
+}
+
+.contact-send input {
+    background-color: #AACE9B;
+}
+.contact-reset input {
+    background-color:#DADADA;
+}

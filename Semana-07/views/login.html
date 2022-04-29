@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap"
+    rel="stylesheet">
+    <script src="../javascript/login.js" type="text/javascript"></script>
+    <title>Log-in</title>
+</head>
+<body>
+    <header>
+        <h1>Trackgenix SA</h1>
+    </header>
+    <nav>
+        <form>
+            <div class="container-search">
+                <input class= "search" type="text" placeholder="Search">
+                <span class="icon">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <div class="account-buttons">
+            <button class="buttons-account" id="log-in">
+                <a href="../views/login.html"> Log in </a>
+            </button>
+            <button class="buttons-account" id="sign-up">
+                <a href="../views/employee-signup.html"> Sign up </a>
+            </button>
+        </div>
+        </div>
+        <p class="menu"> Menu </p>
+        <ul class="sub-menu">
+            <li>
+                <a href="../views/index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="#features">Features</a>
+            </li>
+            <li>
+                <a href="#why-trackgenix">Why Trackgenix?</a>
+            </li>
+            <li>
+                <a href="#contact-us">Contact Us</a>
+            </li>
+        </ul>
+        <div class="get-in-touch">
+        <p class="menu">Get in touch</p>
+        <ul class="more-data">
+            <li>mailinfo@trackgenix.com</li>
+            <li>123-456789</li>
+            <li>123 fake road #2000 Rosario, Argentina</li>
+        </ul>
+        </div>
+    </nav>
+    <div class="page-content">
+        <div class="login">
+            <h2>Log in</h2>
+            <form class="login-form">
+                <div class="status-control">
+                    <label>Email </label>
+                    <input id="email" type="text" placeholder="Insert your email">
+                    <p>Error message</p>
+                </div>
+                <div class="status-control">
+                    <label>Password </label>
+                    <input id="password" type="password" placeholder="************">
+                    <p>Error message</p>
+                </div>
+                <button type="submit" id="btn-login">Login</button>
+                <a href="#">Forgot your password?</a>
+                <a href="../views/employee-signup.html">Sign Up</a>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-title">
+            <h2>TRACKGENIX</h2>
+        </div>
+        <div class ="first-footer-part">
+            <div class="footer-list-one">
+                <h4>Products</h4>
+                <ol>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Downloads</a>
+                    </li>
+                    <li>
+                        <a href="#">Integrations</a>
+                    </li>
+                    <li>
+                        <a href="#">Extras</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="footer-list-one">
+                <h4>Company</h4>
+                <ol>
+                    <li>
+                        <a href="#homepage">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Resourses</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="footer-list-one">
+                <h4>Support</h4>
+                <ol>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorials</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#contact-us">Contact</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>   
+</body>
+</html>
