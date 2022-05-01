@@ -1,3 +1,4 @@
+   
 window.onload = function () {
     //DOM elements
     var name = document.getElementById('name');
@@ -87,32 +88,33 @@ window.onload = function () {
             };
         };
         //returns true if the string contains digits
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
-        };
+        return (control !== 0);
     };
 
     //Check if there are special characters in the string
     function isASymbol (string) {
-        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'";
+        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
         var control = 0;
         for (var i=0; i < string.length; i++) {
-            for(var x=0;x < symbols.length;x++) {
-                if (string[i] == symbols[x]) {
+            if (symbols.includes(string[i])) {
                     control ++;
-                };
-            }
+            };
         };
         //returns true if the string contains a special character
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
-        };
-    }
+        return (control !== 0);  
+    };
 
+    function hasFourLetters (string){
+        control=0;
+        for (var i=0;i<string.length;i++) {
+            //Check if the character isn't a special character nor a number
+            if(!isASymbol(string[i]) && isNaN(string[i])) {
+                control++;
+            };
+        };
+        //returns true if the string has more than 3 letters
+        return (control > 3);
+    };
 
     function checkName (){
         if (checkInput(name)) {
@@ -203,8 +205,8 @@ window.onload = function () {
         };
     };
 
-    //Returns dd/mm/yyyy format
-    function dateFormat (value) {
+    //Returns mm/dd/yyyy format if format value is 'mm/dd/yyyy', if not, returns yyyy-mm-dd format
+    function dateFormat (value,format) {
         var date = new Date(value);
         var dd = date.getDate()+1;
         var mm = date.getMonth() + 1;
@@ -215,7 +217,11 @@ window.onload = function () {
         if (mm < 10) {
             mm = '0' + mm;
         };
-        return dd + '/' + mm + '/' + yyyy;
+        if (format === 'mm/dd/yyyy') { 
+            return mm + '/' + dd + '/' + yyyy;
+        } else {
+            return yyyy + '-' + mm + '-' + dd;
+        }
     };
 
     function checkPhone(){
@@ -238,7 +244,7 @@ window.onload = function () {
         } else if (isNaN(postCode.value) || isASymbol(postCode.value)) {
             showError(postCode,'Please insert a number.');
             return 'Invalid Postcode';
-        } else if (postCode.value.length < 3 || postCode.value.length > 5) {
+        } else if (postCode.value.length < 4 || postCode.value.length > 5) {
             showError(postCode,'Please insert a number between 4 and 5 digits.');
             return 'Invalid Postcode';
         } else {
@@ -249,8 +255,8 @@ window.onload = function () {
     function checkLocation(){
         if(checkInput(location)){
             return 'Location field incomplete';
-        } else if (location.value.length < 4){
-            showError(location,'It must contain at least 4 characters.');
+        } else if (location.value.length < 4 || !hasFourLetters(location.value)) {
+            showError(location,'It must contain at least 4 letters.');
             return 'Location name too short';
         } else if (isASymbol(location.value)){
             showError(location,'Please insert a valid location.');
@@ -266,7 +272,7 @@ window.onload = function () {
         } else if (address.value.length < 5 || address.value.trim().split(" ").length < 2){
             showError(address,'It must contain at least 5 characters with a space in between.');
             return 'Invalid Address name';
-        } else if (!formatValidator(address.value) || !isNaN(address.value.split(" ").join("")) || isASymbol(address.value)) {
+        } else if (!formatValidator(address.value) || !isNaN(address.value.split(" ").join("")) || isASymbol(address.value.split(" ").join(""))) {
             showError(address,'It must contain numbers and letters.');
             return 'Invalid Address name';
         } else {
@@ -289,6 +295,19 @@ window.onload = function () {
         container.className = 'status-control';
     };
 
+    //Load the data from LocalStorage
+    name.value = localStorage.getItem('Name');
+    surname.value = localStorage.getItem('Surname');
+    idNumber.value = localStorage.getItem('ID number');
+    birthDate.value = localStorage.getItem('Birth Date');
+    phoneNumber.value = localStorage.getItem('Phone Number');
+    address.value = localStorage.getItem('Address');
+    location.value = localStorage.getItem('Location');
+    postCode.value = localStorage.getItem('PostCode');
+    email.value = localStorage.getItem('Email');
+    password.value = localStorage.getItem('Password');
+    repeatPassword.value=localStorage.getItem('Password');
+
     //Create button functionality
     signupButton.addEventListener('click',function(e){
         e.preventDefault();
@@ -296,7 +315,6 @@ window.onload = function () {
         array.forEach(function(element) {
            validation(element);
         });
-
         var validations = [checkName(), checkSurname (), checkID(), checkDate(), checkPhone(), checkPostCode()
         , checkAddress(), checkLocation(), checkPassword(), checkEmail (), checkRepeatPassword ()];
         var errors = [];
@@ -306,12 +324,52 @@ window.onload = function () {
                 errors += '\n' + validations[i];
             };
         };
+
         //alerts in case of error or success
         if (errors == ''){
             alert('All the info submitted succesfully!\n Name: '+name.value+ '\n Surname: '+surname.value+
-            '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value)+'\n Phone Number: '
+            '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value,'mm/dd/yyyy')+'\n Phone Number: '
             +phoneNumber.value+'\n Address: '+address.value+'\n Location: '+location.value+'\n PostCode: '
             +postCode.value+'\n Email: '+email.value+'\n Password: '+password.value);
+            
+            // API Request
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' + name.value  + '&lastName=' +
+            surname.value + '&dni=' + idNumber.value + '&dob=' + dateFormat(birthDate.value,'mm/dd/yyyy') + '&phone=' +
+            phoneNumber.value + '&address=' + address.value + '&city=' + location.value + '&zip=' + postCode.value
+            + '&email=' + email.value + '&password=' + password.value)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (jsonResponse) {
+                console.log("json", jsonResponse)
+                //In case of success:
+                if (jsonResponse.success) {
+                    //Show success message
+                    alert('API Response: '+ jsonResponse.msg)
+                    //Save the data in LocalStorage
+                    var info = ['Name', name.value, 'Surname',surname.value,'ID number',idNumber.value,'Birth Date', 
+                    dateFormat(birthDate.value,'yyyy-mm-dd'),'Phone Number',phoneNumber.value,'Address',address.value,'Location',
+                    location.value,'PostCode',postCode.value,'Email',email.value,'Password',password.value];
+                    for (var i=0; i< info.length;i+=2) {
+                        localStorage.setItem(info[i],info[i+1]);
+                    };
+                } else {
+                throw jsonResponse
+                }
+            })
+            .catch(function (error) {
+                var alertError = [];
+                // console.log(error);
+                //if there is more than one error show them all, if not show that one only.
+                if (error.hasOwnProperty('errors')) {
+                    Object.entries(error.errors).forEach(element => {
+                        alertError += '\n' + element[1].msg;
+                    });
+                alert('Sorry, an error has occurred. Please check this items: '+alertError);
+                } else {
+                    alert('API Response: '+ error.msg);
+                };
+            });
         } else {
             alert("Sorry, the user could't be created. Please check:" + errors);
         };
