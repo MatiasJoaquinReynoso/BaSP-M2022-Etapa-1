@@ -19,6 +19,7 @@
     text-transform: uppercase;
 }
 
+ 
 .form-container {
    flex:45;
    margin: 0 47px 0 30px;
@@ -108,5 +109,17 @@
         width: 70%;
         margin-left: 450px;
      }
+
+     .form-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%
+     }
+
+     .sign-up-form  {
+        display: flex;
+        flex-direction: row;
+        
+    }
 
 }    

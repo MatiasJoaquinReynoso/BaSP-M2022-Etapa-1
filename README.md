@@ -59,7 +59,7 @@ In this repository you will find:
 - Go to the file "BaSP-M2022-Etapa-1"
 - Access to the folders "Semana-07" to see the latest updates.
 - Open the file "index.html" on your browser
-- Or click https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html to access directly index.html week-06 from GIT PAGES
+- Or click https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html to access directly index.html week-07 from GIT PAGES
 - If you want to see the landing created in Figma: https://www.figma.com/file/9lqXCWuQHXf9mBq8QbuLci/BaSP---UI-Kit---MM?node-id=301%3A369
  
 ## Contact
