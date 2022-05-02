@@ -30,6 +30,44 @@ window.onload = function () {
         });
     });
 
+        //Check if there are digits in the string
+        function formatValidator (string) {
+            string = string.split(" ").join(""); //remove spaces
+            var control = 0;
+            for (var i=0; i < string.length; i++) {
+                if (Number(string[i]) == string[i]) {
+                    control ++;
+                };
+            };
+            //returns true if the string contains digits
+            return (control !== 0);
+        };
+    
+        //Check if there are special characters in the string
+        function isASymbol (string) {
+            var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
+            var control = 0;
+            for (var i=0; i < string.length; i++) {
+                if (symbols.includes(string[i])) {
+                        control ++;
+                };
+            };
+            //returns true if the string contains a special character
+            return (control !== 0);  
+        };
+    
+        function hasFourLetters (string){
+            control=0;
+            for (var i=0;i<string.length;i++) {
+                //Check if the character isn't a special character nor a number
+                if(!isASymbol(string[i]) && isNaN(string[i])) {
+                    control++;
+                };
+            };
+            //returns true if the string has more than 3 letters
+            return (control > 3);
+        };
+
     //Does the validation based on the element
     function validation (type) {
         switch(type) {
@@ -76,44 +114,6 @@ window.onload = function () {
             showError(input,'Please complete this field.');
             return true;
         };
-    };
-
-    //Check if there are digits in the string
-    function formatValidator (string) {
-        string = string.split(" ").join(""); //remove spaces
-        var control = 0;
-        for (var i=0; i < string.length; i++) {
-            if (Number(string[i]) == string[i]) {
-                control ++;
-            };
-        };
-        //returns true if the string contains digits
-        return (control !== 0);
-    };
-
-    //Check if there are special characters in the string
-    function isASymbol (string) {
-        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
-        var control = 0;
-        for (var i=0; i < string.length; i++) {
-            if (symbols.includes(string[i])) {
-                    control ++;
-            };
-        };
-        //returns true if the string contains a special character
-        return (control !== 0);  
-    };
-
-    function hasFourLetters (string){
-        control=0;
-        for (var i=0;i<string.length;i++) {
-            //Check if the character isn't a special character nor a number
-            if(!isASymbol(string[i]) && isNaN(string[i])) {
-                control++;
-            };
-        };
-        //returns true if the string has more than 3 letters
-        return (control > 3);
     };
 
     function checkName (){

@@ -1,6 +1,7 @@
-# Trackgenix
-## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 4TH WEEK PROJECT
 
+# RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 7th WEEK PROJECT
+
+# Trackgenix
 ## What is Trackgenix?
 ```
 The company Trackgenix SA provides software development services to other companies,and has asked us to develop a web system that facilitates the recording of hours worked by each employee in each project and work team.
@@ -38,6 +39,12 @@ This week we made:
 ### Week 07
 ```
 We are going to work with JavaScript, learning about Promises and Callbacks, and HTTP solutions in asynchronous way. To see the code, yo have to go to "Semana-07" folder, or click here https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html  and see the results in the console.
+
+More links:
+- Login: https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/login.html
+
+- Sign Up: https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/employee-signup.html
+
 ```
 
 ## What will we find on the page?
@@ -47,6 +54,7 @@ We are going to work with JavaScript, learning about Promises and Callbacks, and
 - Information Section
 - History of the company. 
 - And a section of products, company and suport.
+- Social Media info.
 
 ## Content
 In this repository you will find:
@@ -54,13 +62,14 @@ In this repository you will find:
 - An HTML index file with the structure of the layout.
 - A folder called "images" that contains all of the images used in the page
 - Folder called "styles" where you can see the styles used for the layout
+- JS section with the javascript codes used for this week.
 
 ## Guideline
 - Go to the file "BaSP-M2022-Etapa-1"
 - Access to the folders "Semana-07" to see the latest updates.
 - Open the file "index.html" on your browser
 - Or click https://matiasjoaquinreynoso.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html to access directly index.html week-07 from GIT PAGES
-- If you want to see the landing created in Figma: https://www.figma.com/file/9lqXCWuQHXf9mBq8QbuLci/BaSP---UI-Kit---MM?node-id=301%3A369
+
  
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: matiasjoaquinreynoso@gmail.com
