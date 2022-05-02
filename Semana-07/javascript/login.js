@@ -107,12 +107,16 @@ window.onload = function () {
         validation(email);
         validation(password);
         //alerts in case of error or success
+
+        var idNew = 'rose@radiumrocket.com'
+        var newPassword = 'BaSP2022';
+
         if (validation(email) == '' && validation(password) == '') {
-            alert('Succesful login! \n Email: '+email.value+'\n Password: '+password.value);
+            alert('Succesful login! \n Email: '+idNew +'\n Password: '+newPassword );
             
             // API Request
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value 
-            + '&password=' + password.value)
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + idNew
+            + '&password=' + newPassword)
             .then(function (response) {
                 return response.json()
             })
