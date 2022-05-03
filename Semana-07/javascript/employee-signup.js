@@ -1,22 +1,36 @@
-   
 window.onload = function () {
     //DOM elements
     var name = document.getElementById('name');
     var surname = document.getElementById('surname');
-    var idNumber = document.getElementById('idNumber');
-    var birthDate = document.getElementById('birthDate');
-    var phoneNumber = document.getElementById('phoneNumber');
+    var idNumber = document.getElementById('id-number');
+    var birthDate = document.getElementById('birth-date');
+    var phoneNumber = document.getElementById('phone-number');
     var address = document.getElementById('address');
     var location = document.getElementById('location');
-    var postCode = document.getElementById('postCode');
+    var postCode = document.getElementById('post-code');
     var email = document.getElementById('email');
     var password = document.getElementById('password');
-    var repeatPassword = document.getElementById('repeatPassword');
+    var repeatPassword = document.getElementById('repeat-password');
     var signupButton = document.getElementById('btn-sign-up');
     //email REGEX
     var emailFormat = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     //array with elements
     var array = [name,surname,idNumber,birthDate,phoneNumber,address,location,postCode,email,password,repeatPassword];
+
+    //Load the data from LocalStorage if there is some
+    if (localStorage.length > 0) {
+        name.value = localStorage.getItem('name');
+        surname.value = localStorage.getItem('lastName');
+        idNumber.value = localStorage.getItem('dni');
+        birthDate.value = dateFormat(localStorage.getItem('dob'),false);
+        phoneNumber.value = localStorage.getItem('phone');
+        address.value = localStorage.getItem('address');
+        location.value = localStorage.getItem('city');
+        postCode.value = localStorage.getItem('zip');
+        email.value = localStorage.getItem('email');
+        password.value = localStorage.getItem('password');
+        repeatPassword.value=localStorage.getItem('password');
+    };
 
     //Add the events for all the elements
     array.forEach(function(element) {
@@ -29,44 +43,6 @@ window.onload = function () {
             reset(element);
         });
     });
-
-        //Check if there are digits in the string
-        function formatValidator (string) {
-            string = string.split(" ").join(""); //remove spaces
-            var control = 0;
-            for (var i=0; i < string.length; i++) {
-                if (Number(string[i]) == string[i]) {
-                    control ++;
-                };
-            };
-            //returns true if the string contains digits
-            return (control !== 0);
-        };
-    
-        //Check if there are special characters in the string
-        function isASymbol (string) {
-            var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
-            var control = 0;
-            for (var i=0; i < string.length; i++) {
-                if (symbols.includes(string[i])) {
-                        control ++;
-                };
-            };
-            //returns true if the string contains a special character
-            return (control !== 0);  
-        };
-    
-        function hasFourLetters (string){
-            control=0;
-            for (var i=0;i<string.length;i++) {
-                //Check if the character isn't a special character nor a number
-                if(!isASymbol(string[i]) && isNaN(string[i])) {
-                    control++;
-                };
-            };
-            //returns true if the string has more than 3 letters
-            return (control > 3);
-        };
 
     //Does the validation based on the element
     function validation (type) {
@@ -107,8 +83,46 @@ window.onload = function () {
         };
     };
 
-    //Check if the inputs are incomplete
-    function checkInput (input) {
+    //Check if there are digits in the string
+    function formatValidator (string) {
+        string = string.split(" ").join(""); //remove spaces
+        var control = 0;
+        for (var i=0; i < string.length; i++) {
+            if (Number(string[i]) == string[i]) {
+                control ++;
+            };
+        };
+        //returns true if the string contains digits
+        return (control !== 0);
+    };
+
+    //Check if there are special characters in the string
+    function isASymbol (string) {
+        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
+        var control = 0;
+        for (var i=0; i < string.length; i++) {
+            if (symbols.includes(string[i])) {
+                    control ++;
+            };
+        };
+        //returns true if the string contains a special character
+        return (control !== 0);
+    };
+
+    function hasFourLetters (string){
+        control=0;
+        for (var i=0;i<string.length;i++) {
+            //Check if the character isn't a special character nor a number
+            if(!isASymbol(string[i]) && isNaN(string[i])) {
+                control++;
+            };
+        };
+        //returns true if the string has more than 3 letters
+        return (control > 3);
+    };
+
+      //Check if the inputs are incomplete
+      function checkInput (input) {
         if (input.value === '') {
             //show error with message
             showError(input,'Please complete this field.');
@@ -205,11 +219,11 @@ window.onload = function () {
         };
     };
 
-    //Returns mm/dd/yyyy format if format value is 'mm/dd/yyyy', if not, returns yyyy-mm-dd format
-    function dateFormat (value,format) {
+    //Returns mm/dd/yyyy format if UIformat value is true, if not, returns yyyy-mm-dd format
+    function dateFormat (value,UIformat) {
         var date = new Date(value);
         var dd = date.getDate()+1;
-        var mm = date.getMonth() + 1;
+        var mm = date.getMonth()+1;
         var yyyy = date.getFullYear();
         if (dd < 10) {
             dd = '0' + dd;
@@ -217,12 +231,18 @@ window.onload = function () {
         if (mm < 10) {
             mm = '0' + mm;
         };
-        if (format === 'mm/dd/yyyy') { 
+        if (UIformat) {
             return mm + '/' + dd + '/' + yyyy;
         } else {
+            //Need to subtract 1 so that the input type date reads it correctly
+            dd = Number(dd)-1;
+            if (dd < 10) {
+                dd = '0' + dd;
+            };
             return yyyy + '-' + mm + '-' + dd;
-        }
+        };
     };
+
 
     function checkPhone(){
         if(checkInput(phoneNumber)){
@@ -278,7 +298,7 @@ window.onload = function () {
         } else {
             return '';
         };
-    }
+    };
 
     function showError (input, message) {
         var container = input.parentElement;
@@ -295,18 +315,26 @@ window.onload = function () {
         container.className = 'status-control';
     };
 
-    //Load the data from LocalStorage
-    name.value = localStorage.getItem('Name');
-    surname.value = localStorage.getItem('Surname');
-    idNumber.value = localStorage.getItem('ID number');
-    birthDate.value = localStorage.getItem('Birth Date');
-    phoneNumber.value = localStorage.getItem('Phone Number');
-    address.value = localStorage.getItem('Address');
-    location.value = localStorage.getItem('Location');
-    postCode.value = localStorage.getItem('PostCode');
-    email.value = localStorage.getItem('Email');
-    password.value = localStorage.getItem('Password');
-    repeatPassword.value=localStorage.getItem('Password');
+    //Save the data in LocalStorage
+    function saveData(res){
+        Object.entries(res.data).forEach(element => {
+            localStorage.setItem(element[0],element[1]);
+        });
+    };
+
+    //Display the alert indicating that there was an error
+    function displayError(res) {
+        var alertError = [];
+        //if there is more than one error show them all, if not show that one only.
+        if (res.hasOwnProperty('errors')) {
+            Object.entries(res.errors).forEach(element => {
+                alertError += '\n' + element[1].msg;
+            });
+        alert('Sorry, an error has occurred. Please check this items: '+alertError);
+        } else {
+            alert('Sorry, an error has occurred: '+ res.msg);
+        };
+    };
 
     //Create button functionality
     signupButton.addEventListener('click',function(e){
@@ -328,47 +356,31 @@ window.onload = function () {
         //alerts in case of error or success
         if (errors == ''){
             alert('All the info submitted succesfully!\n Name: '+name.value+ '\n Surname: '+surname.value+
-            '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value,'mm/dd/yyyy')+'\n Phone Number: '
+            '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value,true)+'\n Phone Number: '
             +phoneNumber.value+'\n Address: '+address.value+'\n Location: '+location.value+'\n PostCode: '
             +postCode.value+'\n Email: '+email.value+'\n Password: '+password.value);
-            
+
             // API Request
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' + name.value  + '&lastName=' +
-            surname.value + '&dni=' + idNumber.value + '&dob=' + dateFormat(birthDate.value,'mm/dd/yyyy') + '&phone=' +
+            surname.value + '&dni=' + idNumber.value + '&dob=' + dateFormat(birthDate.value,true) + '&phone=' +
             phoneNumber.value + '&address=' + address.value + '&city=' + location.value + '&zip=' + postCode.value
             + '&email=' + email.value + '&password=' + password.value)
             .then(function (response) {
                 return response.json()
             })
             .then(function (jsonResponse) {
-                console.log("json", jsonResponse)
                 //In case of success:
                 if (jsonResponse.success) {
                     //Show success message
-                    alert('API Response: '+ jsonResponse.msg)
-                    //Save the data in LocalStorage
-                    var info = ['Name', name.value, 'Surname',surname.value,'ID number',idNumber.value,'Birth Date', 
-                    dateFormat(birthDate.value,'yyyy-mm-dd'),'Phone Number',phoneNumber.value,'Address',address.value,'Location',
-                    location.value,'PostCode',postCode.value,'Email',email.value,'Password',password.value];
-                    for (var i=0; i< info.length;i+=2) {
-                        localStorage.setItem(info[i],info[i+1]);
-                    };
+                    alert('The request was successful: '+ jsonResponse.msg)
+                    //Call the function to save the data
+                    saveData(jsonResponse);
                 } else {
                 throw jsonResponse
                 }
             })
             .catch(function (error) {
-                var alertError = [];
-                // console.log(error);
-                //if there is more than one error show them all, if not show that one only.
-                if (error.hasOwnProperty('errors')) {
-                    Object.entries(error.errors).forEach(element => {
-                        alertError += '\n' + element[1].msg;
-                    });
-                alert('Sorry, an error has occurred. Please check this items: '+alertError);
-                } else {
-                    alert('API Response: '+ error.msg);
-                };
+                displayError(error);
             });
         } else {
             alert("Sorry, the user could't be created. Please check:" + errors);

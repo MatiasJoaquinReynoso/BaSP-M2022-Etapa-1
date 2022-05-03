@@ -82,7 +82,7 @@ window.onload = function () {
             };
         };
         //returns true if the string contains a special character
-        return (control !== 0);  
+        return (control !== 0);
     };
 
     function showError (input,message) {
@@ -92,13 +92,27 @@ window.onload = function () {
         text.textContent = message;
         //add error class
         container.className = 'status-control error';
-    }
+    };
 
     function reset (input) {
         var container = input.parentElement;
         //reset class name
         container.className = 'status-control';
-    }
+    };
+
+    //Display the alert indicating that there was an error
+    function displayError(res) {
+        var alertError = [];
+        //if there is more than one error show them all, if not show that one only.
+        if (res.hasOwnProperty('errors')) {
+            Object.entries(res.errors).forEach(element => {
+                alertError += '\n' + element[1].msg;
+            });
+        alert('Sorry, an error has occurred. Please check this items: '+alertError);
+        } else {
+            alert('Sorry, an error has occurred: '+ res.msg);
+        };
+    };
 
     //Button login functionality
     button.addEventListener('click', function(e){
@@ -106,45 +120,31 @@ window.onload = function () {
         //run the validations
         validation(email);
         validation(password);
+        
         //alerts in case of error or success
-
-        var idNew = 'rose@radiumrocket.com'
-        var newPassword = 'BaSP2022';
-
         if (validation(email) == '' && validation(password) == '') {
-            alert('Succesful login! \n Email: '+idNew +'\n Password: '+newPassword );
-            
+            alert('Succesful login! \n Email: '+email.value+'\n Password: '+password.value);
+
             // API Request
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + idNew
-            + '&password=' + newPassword)
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value
+            + '&password=' + password.value)
             .then(function (response) {
                 return response.json()
             })
             .then(function (jsonResponse) {
-                console.log("json", jsonResponse)
                 if (jsonResponse.success) {
                     //Success message
-                    alert('API Response: '+jsonResponse.msg)
+                    alert('The request was successful: '+jsonResponse.msg)
                 } else {
                 throw jsonResponse
                 }
             })
             .catch(function (error) {
-                var alertError = [];
-                //if there is more than one error show them all, if not show that one only.
-                if (error.hasOwnProperty('errors')) {
-                    Object.entries(error.errors).forEach(element => {
-                        alertError += '\n' + element[1].msg;
-                        // alert('API Response: '+ element[1].msg);
-                    });
-                alert('Sorry, an error has occurred. Please check this items:'+alertError)               
-                } else {
-                    alert('API Response: '+ error.msg);
-                };
+                displayError(error);
             });
         } else {
             alert('An error has ocurred. Please enter the data correctly.'+'\n'+validation(email) +'\n'+ validation(password));
         };
-        
+
     });
 }
