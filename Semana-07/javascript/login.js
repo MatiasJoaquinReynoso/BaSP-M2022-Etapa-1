@@ -120,7 +120,6 @@ window.onload = function () {
         //run the validations
         validation(email);
         validation(password);
-        
         //alerts in case of error or success
         if (validation(email) == '' && validation(password) == '') {
             alert('Succesful login! \n Email: '+email.value+'\n Password: '+password.value);
